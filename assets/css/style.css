@@ -6,12 +6,27 @@ html {
 }
 
 /* *-------------------- Header */
-
+header {
+  /* height: 118px; */
+  height: 10rem;
+  position: fixed;
+}
 /* *-------------------- Body */
 
 /* *-------------------- Navigation */
 
 /* *-------------------- Sections */
+/* todo: need to fix keeping content below header */
+.section-wrapper {
+  /* margin-top: 158px; */
+  margin-top: 9rem;
+  height: 100vh;
+}
+.section {
+  height: 100%;
+  /* padding-top: 174px; */
+  padding-top: 10rem;
+}
 
 /* *-------------------- Footer */
 
