@@ -32,13 +32,20 @@
     <!-- todo: make this fixed-top -->
     <header class="fixed-top">
       <!-- Navigation -->
-      <!-- todo: make this collapse after choice -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-warning">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- todo: remove anchor decoration and style in css -->
+        <!-- Clickable title -->
         <a href="#what">
           <h1>CARS & COFFEE</h1>
           <h2>Inverness, Scotland.</h2>
         </a>
+        <!-- Theme toggle button -->
+        <!-- todo: implement and style rename etc -->
+        <button class="btn-toggle" id="btn-toggle" onclick="myFunction()">
+          <a>Theme</a>
+        </button>
+        <!-- Collapsible Nav -->
+        <!-- todo: move menu to right -->
         <button
           class="navbar-toggler"
           type="button"
@@ -77,43 +84,46 @@
     <!-- Wrapper -->
     <div class="section-wrapper">
       <!-- What Section -->
-      <div
-        id="what"
-        class="what row no-gutters container-fluid section bg-secondary text-warning"
-      >
+      <div id="what" class="what row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>What</div>
-          <div>Event description</div>
+          <div>
+            Event description<br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
+            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
+            sit iure deserunt beatae sed! Soluta?
+          </div>
         </div>
         <div class="col-sm-6">Image</div>
       </div>
       <!-- When Section -->
-      <div
-        id="when"
-        class="When row no-gutters container-fluid section bg-secondary text-warning"
-      >
+      <div id="when" class="When row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>When</div>
-          <div>Event timings</div>
+          <div>
+            Event timings<br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
+            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
+            sit iure deserunt beatae sed! Soluta?
+          </div>
         </div>
         <div class="col-sm-6">Image</div>
       </div>
       <!-- Where Section -->
-      <div
-        id="where"
-        class="Where row no-gutters container-fluid section bg-secondary text-warning"
-      >
+      <div id="where" class="Where row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>Where</div>
-          <div>Event Location</div>
+          <div>
+            Event Location<br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
+            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
+            sit iure deserunt beatae sed! Soluta?
+          </div>
         </div>
         <div class="col-sm-6">Map</div>
       </div>
       <!-- Contact Section -->
-      <div
-        id="contact"
-        class="contact row no-gutters container-fluid section bg-secondary text-warning"
-      >
+      <div id="contact" class="contact row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>Get in Touch!</div>
           <!-- Contact Form -->
@@ -195,3 +205,37 @@
     </script>
   </body>
 </html>
+
+<!-- todo: Testing/holding area -->
+
+<!-- Theme CSS head code -->
+
+<!-- Light theme stylesheet -->
+<!-- <link href="light-theme.css" rel="stylesheet" id="theme-link" /> -->
+
+<!-- Theme toggle button -->
+<!-- <button class="btn-toggle" id="btn-toggle" onclick="myFunction()">
+  <a>mode</a>
+</button> -->
+
+<!-- Script to toggle themes -->
+
+<!-- <script>
+  // Select the button
+  const btn = document.querySelector(".btn-toggle");
+  // Select the stylesheet <link>
+  const theme = document.querySelector("#theme-link");
+
+  // Listen for a click on the button
+  btn.addEventListener("click", function () {
+    // If the current URL contains "light-theme.css"
+    if (theme.getAttribute("href") == "light-theme.css") {
+      // ... then switch it to "dark-theme.css"
+      theme.href = "dark-theme.css";
+      // Otherwise...
+    } else {
+      // ... switch it to "light-theme.css"
+      theme.href = "light-theme.css";
+    }
+  });
+</script> -->
