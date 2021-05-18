@@ -19,19 +19,21 @@ An interactive website providing information for the regular automotive event **
 - [Deployment](https://github.com/VinnyShaw/cars-and-coffee-ci-ms2/blob/master/README.md#deployment)
 - [Credits](https://github.com/VinnyShaw/cars-and-coffee-ci-ms2/blob/master/README.md#credits)
 
-## User Experience
+## User Experience and Stories
 
 The aim of this website is to allow the user to find information about the event and its activities.
 
-- A user may want to learn about the organisers of the event.
-
-- A user may want to know the time and location of the event.
-
-- A user may want to see a map detailing the the location of the event or any other planned activities.
-
-- A user may want to easily contact the organisers of the event regarding attending or ask for additional information.
-
-- A user may want to connect to the event via social media or to follow the accounts.
+- A user may wish to know the time and location of the event.
+- A user may wish to see a map detailing the the location of the event or any other planned activities.
+- A user may wish to easily contact the organisers of the event regarding attending or ask for additional information.
+- A user may wish to find out what the theme of the event by reading a clear description.
+- A user may wish to see where the event is by looking at its location on google maps.
+- A user may wish to know when the event is in a clear event listing.
+- A user may wish to find the events social media accounts and be able to follow a link to them.
+- A user may wish to contact the event organisers by use of a simple form.
+- A user may wish to see the routes driven on the events.
+- A user may wish to toggle the information displayed on the route maps.
+- A user may wish to toggle the colour scheme of the site between light and dark modes.
 
 <!-- ## [Click to visit Wireframes, mockups and screenshots](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md) -->
 
