@@ -37,6 +37,11 @@ body {
   padding-top: 10rem;
 }
 
+/* *-------------------- Where Section */
+div#map {
+  min-height: 360px;
+}
+
 /* *-------------------- Footer */
 
 /* *-------------------- Media Queries */

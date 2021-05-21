@@ -31,32 +31,39 @@
     <!-- Header -->
     <!-- todo: make this fixed-top -->
     <header class="fixed-top">
+      <!-- todo: work on rows and cols -->
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="row no-gutters navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- todo: remove anchor decoration and style in css -->
         <!-- Clickable title -->
-        <a href="#what">
-          <h1>CARS & COFFEE</h1>
-          <h2>Inverness, Scotland.</h2>
-        </a>
+        <div class="col-6">
+          <a href="#what">
+            <h1>CARS & COFFEE</h1>
+            <h2>Inverness, Scotland.</h2>
+          </a>
+        </div>
         <!-- Theme toggle button -->
         <!-- todo: implement and style rename etc -->
-        <button class="btn-toggle" id="btn-toggle" onclick="myFunction()">
-          <a>Theme</a>
-        </button>
+        <div class="col-2">
+          <button class="btn-toggle" id="btn-toggle" onclick="myFunction()">
+            <a>Theme</a>
+          </button>
+        </div>
         <!-- Collapsible Nav -->
-        <!-- todo: move menu to right -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- todo: move menu to right and below toggle when xs -->
+        <div class="col-2">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -87,12 +94,7 @@
       <div id="what" class="what row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>What</div>
-          <div>
-            Event description<br />Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
-            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
-            sit iure deserunt beatae sed! Soluta?
-          </div>
+          <div>Event description</div>
         </div>
         <div class="col-sm-6">Image</div>
       </div>
@@ -100,12 +102,7 @@
       <div id="when" class="When row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>When</div>
-          <div>
-            Event timings<br />Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
-            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
-            sit iure deserunt beatae sed! Soluta?
-          </div>
+          <div>Event timings</div>
         </div>
         <div class="col-sm-6">Image</div>
       </div>
@@ -113,14 +110,10 @@
       <div id="where" class="Where row no-gutters container-fluid section">
         <div class="col-sm-6">
           <div>Where</div>
-          <div>
-            Event Location<br />Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptas recusandae iste dolorem perspiciatis
-            tenetur illo ex ut in dolore distinctio ducimus quas fugit suscipit,
-            sit iure deserunt beatae sed! Soluta?
-          </div>
+          <div>Event Location</div>
+          <!-- Map -->
+          <div id="map"></div>
         </div>
-        <div class="col-sm-6">Map</div>
       </div>
       <!-- Contact Section -->
       <div id="contact" class="contact row no-gutters container-fluid section">
@@ -197,17 +190,24 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <!-- re-collapse nav after anchor selection script -->
+    <!-- Re-collapse nav after anchor selection script -->
     <script>
       $(".navbar-collapse a").click(function () {
         $(".navbar-collapse").collapse("hide");
       });
     </script>
+    <!-- Google Maps API Scripts -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0&callback=initMap"
+    ></script>
+    <script src="assets/js/map.js"></script>
   </body>
 </html>
 
 <!-- todo: Testing/holding area -->
-
 <!-- Theme CSS head code -->
 
 <!-- Light theme stylesheet -->
@@ -220,22 +220,23 @@
 
 <!-- Script to toggle themes -->
 
-<!-- <script>
-  // Select the button
-  const btn = document.querySelector(".btn-toggle");
-  // Select the stylesheet <link>
-  const theme = document.querySelector("#theme-link");
+<script>
+  //   // Select the button
+  //   const btn = document.querySelector(".btn-toggle");
+  //   // Select the stylesheet <link>
+  //   const theme = document.querySelector("#theme-link");
 
-  // Listen for a click on the button
-  btn.addEventListener("click", function () {
-    // If the current URL contains "light-theme.css"
-    if (theme.getAttribute("href") == "light-theme.css") {
-      // ... then switch it to "dark-theme.css"
-      theme.href = "dark-theme.css";
-      // Otherwise...
-    } else {
-      // ... switch it to "light-theme.css"
-      theme.href = "light-theme.css";
-    }
-  });
-</script> -->
+  //   // Listen for a click on the button
+  //   btn.addEventListener("click", function () {
+  //     // If the current URL contains "light-theme.css"
+  //     if (theme.getAttribute("href") == "light-theme.css") {
+  //       // ... then switch it to "dark-theme.css"
+  //       theme.href = "dark-theme.css";
+  //       // Otherwise...
+  //     } else {
+  //       // ... switch it to "light-theme.css"
+  //       theme.href = "light-theme.css";
+  //     }
+  //   });
+  //
+</script>
