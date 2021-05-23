@@ -72,6 +72,26 @@ function initMap() {
 
       icon: IconStyle[locations[i][2]],
     });
+
+    markers.push(marker);
+
+    google.maps.event.addListener(
+      marker,
+      "click",
+      (function (marker, i) {
+        return function () {
+          infowindow.setContent(
+            locations[i][0] +
+              "<br />" +
+              locations[i][1] +
+              "<br />" +
+              locations[i][2]
+          );
+
+          infowindow.open(map, marker);
+        };
+      })(marker, i)
+    );
   }
 }
 
