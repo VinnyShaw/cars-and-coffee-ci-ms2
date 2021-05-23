@@ -116,6 +116,45 @@
           <div>Event Location:<br />Rollerbowl, Culduthel Road, Inverness</div>
           <!-- Map -->
           <div id="map"></div>
+          <!-- Checkboxes for information display toggle -->
+          <form>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="Start"
+                value="Start"
+              />
+              <label class="form-check-label" for="Start">Start/Meeting</label>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="Route1"
+                value="Route1"
+              />
+              <label class="form-check-label" for="Route1">Route 1</label>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="Route2"
+                value="Route2"
+              />
+              <label class="form-check-label" for="Route2">Route 2</label>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="Route3"
+                value="Route3"
+              />
+              <label class="form-check-label" for="Route3">Route 3</label>
+            </div>
+          </form>
         </div>
       </div>
       <!-- Contact Section -->
@@ -207,6 +246,7 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0&callback=initMap"
     ></script>
+    <!-- Custom JavaScript link -->
     <script src="assets/js/map.js"></script>
   </body>
 </html>
