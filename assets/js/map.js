@@ -93,6 +93,36 @@ function initMap() {
       })(marker, i)
     );
   }
+
+  //Shows markers of a category, and checks the checkbox is checked
+  function show(category) {
+    for (var i = 0; i < locations.length; i++) {
+      if (locations[i][2] == category) {
+        markers[i].setVisible(true);
+      }
+    }
+  }
+
+  // Hides markers of a category, and checks the checkbox is cleared
+  function hide(category) {
+    for (var i = 0; i < locations.length; i++) {
+      if (locations[i][2] == category) {
+        markers[i].setVisible(false);
+      }
+    }
+  }
+
+  $(".form-check-input").click(function () {
+    var cat = $(this).attr("value");
+
+    // Checkbox behaviour
+
+    if ($(this).is(":checked")) {
+      show(cat);
+    } else {
+      hide(cat);
+    }
+  });
 }
 
 // Todo: How to display a route with directions?
