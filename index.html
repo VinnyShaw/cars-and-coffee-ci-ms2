@@ -39,7 +39,8 @@
         <div class="col-6">
           <a href="#what">
             <h1>CARS & COFFEE</h1>
-            <h2>Inverness, Scotland.</h2>
+            <!-- todo: add the subtitle again when do font sizing -->
+            <!-- <h2>Inverness, Scotland.</h2> -->
           </a>
         </div>
         <!-- Theme toggle button -->
@@ -74,10 +75,10 @@
               <a class="nav-link" href="#what">What</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#where">Where</a>
+              <a class="nav-link" href="#when">When</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#when">When</a>
+              <a class="nav-link" href="#where">Where</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -93,40 +94,58 @@
       <!-- What Section -->
       <!-- todo: add text/image -->
       <div id="what" class="what row no-gutters container-fluid section">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div>What</div>
-          <div>Event description</div>
+          <div>
+            Cars and Coffee Inverness is monthly automotive event where like
+            minded car fans get together to show off their cars and socialize.
+          </div>
         </div>
-        <div class="col-sm-6">Image</div>
+        <div class="col col-md-6">Image to go here</div>
       </div>
       <!-- When Section -->
       <!-- todo: add text/image -->
       <div id="when" class="When row no-gutters container-fluid section">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div>When</div>
-          <div>Event timings</div>
+          <div>
+            The main event is held on the 2nd Sunday of each month, between 10am
+            and 12pm.<br />There are also regular organized "Drive It" days,
+            held on pre-defined routes around the Inverness area.
+          </div>
         </div>
-        <div class="col-sm-6">Image</div>
+        <div class="col col-sm-6">Image to go here</div>
       </div>
       <!-- Where Section -->
-      <!-- todo: add text and toggles etc -->
-      <div id="where" class="Where row no-gutters container-fluid section">
-        <div class="col-sm-6">
+      <!-- todo: tidy/layout/route polylines -->
+      <div
+        id="where"
+        class="
+          Where
+          row
+          no-gutters
+          container-fluid
+          section
+          justify-content-center
+        "
+      >
+        <div class="col-md-6">
           <div>Where</div>
+          <div>Each event is held at Rollerbowl, Clduthel Road, Inverness.</div>
           <!-- Map -->
           <div id="map"></div>
           <!-- Checkboxes for information display toggle -->
-          <form>
-            <div class="form-group form-check">
+          <form class="form-row justify-content-center">
+            <div class="form-group form-check-inline">
               <input
                 type="checkbox"
                 class="form-check-input"
                 id="Start"
                 value="Start"
               />
-              <label class="form-check-label" for="Start">Start/Meeting</label>
+              <label class="form-check-label" for="Start">Meeting</label>
             </div>
-            <div class="form-group form-check">
+            <div class="form-group form-check-inline">
               <input
                 type="checkbox"
                 class="form-check-input"
@@ -135,7 +154,7 @@
               />
               <label class="form-check-label" for="Route1">Route 1</label>
             </div>
-            <div class="form-group form-check">
+            <div class="form-group form-check-inline">
               <input
                 type="checkbox"
                 class="form-check-input"
@@ -144,7 +163,7 @@
               />
               <label class="form-check-label" for="Route2">Route 2</label>
             </div>
-            <div class="form-group form-check">
+            <div class="form-group form-check-inline">
               <input
                 type="checkbox"
                 class="form-check-input"
@@ -153,21 +172,163 @@
               />
               <label class="form-check-label" for="Route3">Route 3</label>
             </div>
+            <div class="form-group form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="Fuel"
+                value="Fuel"
+              />
+              <label class="form-check-label" for="Fuel">Fuel</label>
+            </div>
+            <div class="form-group form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="FoodAndDrink"
+                value="FoodAndDrink"
+              />
+              <label class="form-check-label" for="FoodAndDrink"
+                >Food/Drink</label
+              >
+            </div>
+            <div class="form-group form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="POI"
+                value="POI"
+              />
+              <label class="form-check-label" for="POI">POI</label>
+            </div>
           </form>
         </div>
       </div>
-      <!-- Contact Section -->
-      <!-- todo: add contact form -->
-      <div id="contact" class="contact row no-gutters container-fluid section">
-        <div class="col-sm-6">
-          <div>Get in Touch!</div>
+      <!-- Contact Section-->
+      <!-- todo: add functionality/image -->
+      <div
+        id="contact"
+        class="
+          contact
+          row
+          no-gutters
+          container-fluid
+          section
+          justify-content-center
+        "
+      >
+        <div class="col form-container section-text centered">
+          <h1 class="text-uppercase form-title d-none d-md-inline-block">
+            Get in Touch!
+          </h1>
+
           <!-- Contact Form -->
-          <div>Contact form</div>
+          <!-- Todo: This form needs updated to use emailjs and have all the classes checked -->
+          <form method="post" action="https://formdump.codeinstitute.net/">
+            <!-- Input area -->
+            <div class="form-row justify-content-center">
+              <!-- Upper/Left form section -->
+              <div class="col-xs col-sm-6 col-lg-12 col-xl-8">
+                <!-- Names -->
+                <div class="form-row justify-content-center">
+                  <div class="form-group col col-md-10 col-lg-6">
+                    <label for="first-name" class="sr-only">First Name</label>
+                    <input
+                      name="first-name"
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="first-name"
+                      aria-labelledby="first-name"
+                      aria-describedby="first-name"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row justify-content-center">
+                  <div class="form-group col col-md-10 col-lg-6">
+                    <label for="last-name" class="sr-only">Last Name</label>
+                    <input
+                      name="last-name"
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="last-name"
+                      aria-labelledby="last-name"
+                      aria-describedby="last-name"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-row justify-content-center">
+                  <div class="form-group col col-md-10 col-lg-6">
+                    <label for="email" class="sr-only">Email</label>
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control form-control-md"
+                      id="email"
+                      aria-labelledby="email"
+                      aria-describedby="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="form-row justify-content-center">
+                  <div class="form-group col col-md-10 col-lg-6">
+                    <label for="subject" class="sr-only">Subject</label>
+                    <input
+                      name="subject"
+                      type="subject"
+                      class="form-control form-control-md"
+                      id="subject"
+                      aria-labelledby="subject"
+                      aria-describedby="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lower/Right form section -->
+              <div class="col-xs col-sm-6 col-md-6 col-lg-12 col-xl-8">
+                <!-- Message -->
+                <div class="form-row justify-content-center">
+                  <div class="form-group col col-md-10 col-lg-6">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea
+                      name="message"
+                      rows="5"
+                      class="form-control form-control-md"
+                      id="message"
+                      aria-labelledby="message"
+                      aria-describedby="message"
+                      placeholder="Your message..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-row">
+              <div class="form-group col">
+                <button type="submit" class="btn btn-primary btn-submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="col-sm-6">Image</div>
       </div>
     </div>
-
     <!-- Footer -->
     <footer class="container-fluid fixed-bottom bg-dark">
       <div class="row">
@@ -245,6 +406,11 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0&callback=initMap"
     ></script>
+    <!-- <script
+      async
+      defer
+      src="https://roads.googleapis.com/v1/snapToRoads?parameters&key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0"
+    ></script> -->
     <!-- Custom JavaScript link -->
     <script src="assets/js/map.js"></script>
   </body>

@@ -28,7 +28,7 @@ body {
 /* todo: need to fix keeping content below header and anchors correct */
 .section-wrapper {
   /* margin-top: 158px; */
-  margin-top: 9rem;
+  /* margin-top: 9rem; */
   height: 100vh;
 }
 .section {

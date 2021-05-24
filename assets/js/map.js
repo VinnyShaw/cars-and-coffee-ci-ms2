@@ -6,6 +6,7 @@ function initMap() {
       lat: 57.4679914,
       lng: -4.256877,
     },
+    mapTypeId: "roadmap",
   });
 
   // Declares var markers as an array
@@ -21,11 +22,17 @@ function initMap() {
     "http://labs.google.com/ridefinder/images/mm_20_yellow.png";
   IconStyle["Route3"] =
     "http://labs.google.com/ridefinder/images/mm_20_blue.png";
+  IconStyle["Fuel"] =
+    "http://labs.google.com/ridefinder/images/mm_20_purple.png";
+  IconStyle["FoodAndDrink"] =
+    "http://labs.google.com/ridefinder/images/mm_20_orange.png";
+  IconStyle["POI"] = "http://labs.google.com/ridefinder/images/mm_20_brown.png";
 
   // todo: how do I change what info is needed, how do I draw line between markers?
   // todo: make sure start has a diff colour in each route
   // Todo: zoom to fit function?
-  // todo: Need to add fuel stops, food/drink, POI
+  // todo: Need to add fuel stops, food/drink, POI locations
+  // Todo: How to display a route with directions?
 
   // This var is an array of strings of route location info
   var locations = [
@@ -58,6 +65,7 @@ function initMap() {
     ["Furness", "Food/Drink", "Route3", 57.4855782, -3.7376227, 9],
 
     ["Carrbridge", "Testing", "Route3", 57.2845402, -3.8174617, 10],
+    // Fuel/ food/drink, POI
   ];
 
   var infowindow = new google.maps.InfoWindow();
@@ -112,6 +120,16 @@ function initMap() {
     }
   }
 
+  // Show or hide the categories at loading
+
+  show("Start");
+
+  hide("Route1");
+
+  hide("Route2");
+
+  hide("Route3");
+
   $(".form-check-input").click(function () {
     var cat = $(this).attr("value");
 
@@ -123,6 +141,31 @@ function initMap() {
       hide(cat);
     }
   });
-}
+  // }
 
-// Todo: How to display a route with directions?
+  // Todo: Get a polyline between markers/waypoints
+  // Todo: Toggle it with route checkbox
+  // Todo: Perhaps store the array and recall to the render function?
+  // Todo: Make polyline follow roads
+  // Todo: Make polyline toggle with checkboxes
+  // Todo: Simplify the script
+  // ToDo: Testing Area below
+
+  // // Route1 coordinates
+  // const Route1Coordinates = [
+  //   { lat: 57.4508937, lng: -4.2249295 },
+  //   { lat: 57.3819217, lng: -4.3353143 },
+  //   { lat: 57.1443685, lng: -4.6928865 },
+  //   { lat: 57.3295764, lng: -4.4936363 },
+  // ];
+  // // creates the polyline
+  // const Route1 = new google.maps.Polyline({
+  //   path: Route1Coordinates,
+  //   geodesic: true,
+  //   strokeColor: "#00FF00",
+  //   strokeOpacity: 1.0,
+  //   strokeWeight: 2,
+  // });
+  // // Sets it to the map
+  // Route1.setMap(map);
+}
