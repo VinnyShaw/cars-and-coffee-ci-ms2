@@ -1,4 +1,5 @@
 // todo: change the gmail and rosie text
+console.log("is this working?");
 function sendMail(contactForm) {
   emailjs
     .send("gmail", "ms2", {
