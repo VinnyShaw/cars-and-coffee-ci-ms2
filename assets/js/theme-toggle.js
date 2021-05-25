@@ -1,3 +1,4 @@
+console.log("This means theme-toggle.js is linked correctly");
 // THis script switches which CSS stylesheet is referenced by index.html
 
 // Selects the theme toggle button

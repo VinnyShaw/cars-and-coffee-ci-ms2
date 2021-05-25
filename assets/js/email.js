@@ -1,5 +1,5 @@
 // todo: change the gmail and rosie text
-console.log("is this working?");
+console.log("This means email.js is linked correctly");
 function sendMail(contactForm) {
   emailjs
     .send("gmail", "ms2", {

@@ -1,3 +1,4 @@
+console.log("This means map.js is linked correctly");
 // Renders the map centered at Inverness, Scotland.
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
