@@ -21,9 +21,18 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!-- Custom CSS -->
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_iNNa0H7xnY1MU5uJtZXRX");
+      })();
+    </script>
 
-    <!-- Theme stylesheet -->
+    <!-- Custom CSS Theme stylesheet -->
     <link href="assets/css/dark-theme.css" rel="stylesheet" id="theme-link" />
 
     <!-- Favicon -->
@@ -230,7 +239,8 @@
 
           <!-- Contact Form -->
           <!-- Todo: This form needs updated to use emailjs and have all the classes checked -->
-          <form method="post" action="https://formdump.codeinstitute.net/">
+          <!-- <form method="post" action="https://formdump.codeinstitute.net/"> -->
+          <form onsubmit="return sendMail(this);">
             <!-- Input area -->
             <div class="form-row justify-content-center">
               <!-- Upper/Left form section -->
@@ -272,10 +282,10 @@
                   <div class="form-group col col-md-10 col-lg-6">
                     <label for="email" class="sr-only">Email</label>
                     <input
-                      name="email"
+                      name="emailaddress"
                       type="email"
                       class="form-control form-control-md"
-                      id="email"
+                      id="emailaddress"
                       aria-labelledby="email"
                       aria-describedby="email"
                       placeholder="Email"
@@ -421,8 +431,11 @@
       src="https://roads.googleapis.com/v1/snapToRoads?parameters&key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0"
     ></script> -->
 
-    <!-- Custom JavaScript link -->
+    <!-- Custom JavaScript -->
     <script src="assets/js/map.js"></script>
+
+    <!-- Email JavaScript -->
+    <script src="assets/js/email.js"></script>
 
     <!-- CSS Theme toggle script -->
     <script src="assets/js/theme-toggle.js"></script>
