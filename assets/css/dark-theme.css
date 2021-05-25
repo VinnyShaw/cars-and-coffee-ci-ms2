@@ -1,0 +1,86 @@
+/* Dark Theme CSS */
+/* todo: this CSS needs styled to be dark theme */
+
+/* *-------------------- Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+/* *-------------------- Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* *-------------------- Header */
+header {
+  /* height: 118px; */
+  height: 10rem;
+  position: fixed;
+}
+/* *-------------------- Body */
+/* todo: this is not the final colorscheme */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #ffff00;
+  background-color: #4d4d4d;
+}
+
+/* *-------------------- Navigation */
+
+/* *-------------------- Sections */
+/* todo: need to fix keeping content below header and anchors correct */
+.section-wrapper {
+  /* margin-top: 158px; */
+  /* margin-top: 9rem; */
+  height: 100vh;
+}
+.section {
+  height: 100%;
+  /* padding-top: 174px; */
+  padding-top: 10rem;
+}
+
+/* *-------------------- Where Section */
+div#map {
+  min-height: 360px;
+}
+
+/* *-------------------- Footer */
+
+/* *-------------------- Media Queries */
+
+/* todo: Below is under construction */
+/* *-------------------- Theme Toggle */
+
+/* Toggle button classes  */
+
+/* Toggle button  */
+.btn-toggle {
+  background-color: #ffa500;
+  border: solid #282b13 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 5px;
+  /* position: absolute; */
+  /* right: 70px; */
+}
+
+/* Toggle button label  */
+.btn-toggle a {
+  color: #282b13;
+  text-decoration: none;
+}
+
+/* Toggle button hover  */
+.btn-toggle:hover {
+  background-color: #282b13;
+  border: solid #ffa500 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+/* Toggle button label hover  */
+.btn-toggle a:hover {
+  color: #ffa500;
+  text-decoration: none;
+}

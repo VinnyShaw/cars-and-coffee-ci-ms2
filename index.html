@@ -20,20 +20,24 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <!-- Theme stylesheet -->
+    <link href="assets/css/dark-theme.css" rel="stylesheet" id="theme-link" />
+
     <!-- Favicon -->
     <link rel="icon" href="..." />
     <title>Cars and Coffee</title>
   </head>
 
-  <body class="bg-dark">
+  <body>
     <!-- Header -->
     <!-- todo: make this fixed-top -->
     <header class="fixed-top">
       <!-- todo: work on rows and cols -->
       <!-- Navigation -->
-      <nav class="row no-gutters navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="row no-gutters navbar navbar-expand-lg navbar-dark">
         <!-- todo: remove anchor decoration and style in css -->
         <!-- Clickable title -->
         <div class="col-6">
@@ -44,9 +48,8 @@
           </a>
         </div>
         <!-- Theme toggle button -->
-        <!-- todo: implement and style rename etc -->
         <div class="col-2">
-          <button class="btn-toggle" id="btn-toggle" onclick="myFunction()">
+          <button class="btn-toggle" id="btn-toggle" on(click)="themeToggle()">
             <a>Theme</a>
           </button>
         </div>
@@ -330,7 +333,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="container-fluid fixed-bottom bg-dark">
+    <footer class="container-fluid fixed-bottom">
       <div class="row">
         <!-- Contact link - Hidden on smallest screens for visual balance -->
         <div class="d-none d-sm-inline-block contact-link col-sm-4 text-center">
@@ -399,6 +402,7 @@
         $(".navbar-collapse").collapse("hide");
       });
     </script>
+
     <!-- Google Maps API Scripts -->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script
@@ -406,12 +410,18 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0&callback=initMap"
     ></script>
+
+    <!-- todo: snap to road testing -->
     <!-- <script
       async
       defer
       src="https://roads.googleapis.com/v1/snapToRoads?parameters&key=AIzaSyDgCpyDpcPzW_TG0nUu3hV82cXwr8rNWN0"
     ></script> -->
+
     <!-- Custom JavaScript link -->
     <script src="assets/js/map.js"></script>
+
+    <!-- CSS Theme toggle script -->
+    <script src="assets/js/theme-toggle.js"></script>
   </body>
 </html>

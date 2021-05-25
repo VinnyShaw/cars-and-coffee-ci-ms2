@@ -1,3 +1,6 @@
+/* Light Theme CSS */
+/* todo: this CSS needs styled to be light theme */
+
 /* *-------------------- Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
@@ -18,8 +21,8 @@ header {
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  color: #ffff00;
-  background-color: #4d4d4d;
+  color: #4d4d4d;
+  background-color: #ffff00;
 }
 
 /* *-------------------- Navigation */
