@@ -31,16 +31,19 @@
     <title>Cars and Coffee</title>
   </head>
 
+  <!-- todo: remove any bootstrap colours and apply to the themed css files -->
   <body>
     <!-- Header -->
     <!-- todo: make this fixed-top -->
     <header class="fixed-top">
       <!-- todo: work on rows and cols -->
       <!-- Navigation -->
-      <nav class="row no-gutters navbar navbar-expand-lg navbar-dark">
+      <nav
+        class="row no-gutters navbar navbar-expand-lg navbar-dark bg-secondary"
+      >
         <!-- todo: remove anchor decoration and style in css -->
         <!-- Clickable title -->
-        <div class="col-6">
+        <div class="col-6 col-sm-9">
           <a href="#what">
             <h1>CARS & COFFEE</h1>
             <!-- todo: add the subtitle again when do font sizing -->
@@ -48,14 +51,14 @@
           </a>
         </div>
         <!-- Theme toggle button -->
-        <div class="col-2">
+        <div class="col">
           <button class="btn-toggle" id="btn-toggle" on(click)="themeToggle()">
             <a>Theme</a>
           </button>
         </div>
         <!-- Collapsible Nav -->
         <!-- todo: move menu to right and below toggle when xs -->
-        <div class="col-2">
+        <div class="col">
           <button
             class="navbar-toggler"
             type="button"
@@ -333,7 +336,7 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid fixed-bottom bg-secondary">
       <div class="row">
         <!-- Contact link - Hidden on smallest screens for visual balance -->
         <div class="d-none d-sm-inline-block contact-link col-sm-4 text-center">

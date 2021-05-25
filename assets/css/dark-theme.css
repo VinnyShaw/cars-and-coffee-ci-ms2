@@ -16,16 +16,60 @@ header {
   height: 10rem;
   position: fixed;
 }
+
+/* *-------------------- Theme Toggle */
+
+/* Toggle button classes  */
+
+/* Toggle button  */
+.btn-toggle {
+  background-color: #ffff00;
+  border: solid #282b13 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 5px;
+  /* position: absolute; */
+  /* right: 70px; */
+}
+
+/* Toggle button label  */
+.btn-toggle a {
+  color: #282b13;
+  text-decoration: none;
+}
+
+/* Toggle button hover  */
+.btn-toggle:hover {
+  background-color: #282b13;
+  border: solid #ffff00 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+/* Toggle button label hover  */
+.btn-toggle a:hover {
+  color: #ffff00;
+  text-decoration: none;
+}
+
 /* *-------------------- Body */
 /* todo: this is not the final colorscheme */
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   color: #ffff00;
-  background-color: #4d4d4d;
+  background-color: #6c757d;
+}
+
+h1 {
+  color: #ffff00;
 }
 
 /* *-------------------- Navigation */
+
+.nav-item {
+  text-align: right;
+}
 
 /* *-------------------- Sections */
 /* todo: need to fix keeping content below header and anchors correct */
@@ -50,37 +94,3 @@ div#map {
 /* *-------------------- Media Queries */
 
 /* todo: Below is under construction */
-/* *-------------------- Theme Toggle */
-
-/* Toggle button classes  */
-
-/* Toggle button  */
-.btn-toggle {
-  background-color: #ffa500;
-  border: solid #282b13 2px;
-  border-radius: 25px;
-  padding: 5px 15px;
-  margin: 5px;
-  /* position: absolute; */
-  /* right: 70px; */
-}
-
-/* Toggle button label  */
-.btn-toggle a {
-  color: #282b13;
-  text-decoration: none;
-}
-
-/* Toggle button hover  */
-.btn-toggle:hover {
-  background-color: #282b13;
-  border: solid #ffa500 2px;
-  border-radius: 25px;
-  padding: 5px 15px;
-}
-
-/* Toggle button label hover  */
-.btn-toggle a:hover {
-  color: #ffa500;
-  text-decoration: none;
-}

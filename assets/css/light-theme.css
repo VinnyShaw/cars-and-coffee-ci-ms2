@@ -22,10 +22,14 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   color: #4d4d4d;
-  background-color: #ffff00;
+  background-color: #ffffff;
 }
 
 /* *-------------------- Navigation */
+
+.nav-item {
+  text-align: right;
+}
 
 /* *-------------------- Sections */
 /* todo: need to fix keeping content below header and anchors correct */
@@ -56,7 +60,7 @@ div#map {
 
 /* Toggle button  */
 .btn-toggle {
-  background-color: #ffa500;
+  background-color: #ffff00;
   border: solid #282b13 2px;
   border-radius: 25px;
   padding: 5px 15px;
@@ -74,13 +78,13 @@ div#map {
 /* Toggle button hover  */
 .btn-toggle:hover {
   background-color: #282b13;
-  border: solid #ffa500 2px;
+  border: solid #ffff00 2px;
   border-radius: 25px;
   padding: 5px 15px;
 }
 
 /* Toggle button label hover  */
 .btn-toggle a:hover {
-  color: #ffa500;
+  color: #ffff00;
   text-decoration: none;
 }

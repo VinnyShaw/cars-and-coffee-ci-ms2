@@ -15,7 +15,8 @@ function initMap() {
   // Assigns different marker icons to each route
   var IconStyle = {};
 
-  IconStyle["Start"] = "http://www.google.com/mapfiles/dd-start.png";
+  IconStyle["Start"] =
+    "http://labs.google.com/ridefinder/images/mm_20_green.png";
   IconStyle["Route1"] =
     "http://labs.google.com/ridefinder/images/mm_20_green.png";
   IconStyle["Route2"] =
