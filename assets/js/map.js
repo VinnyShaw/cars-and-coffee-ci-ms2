@@ -17,17 +17,17 @@ function initMap() {
   var IconStyle = {};
 
   IconStyle["Start"] =
-    "http://labs.google.com/ridefinder/images/mm_20_green.png";
+    "https://labs.google.com/ridefinder/images/mm_20_green.png";
   IconStyle["Route1"] =
-    "http://labs.google.com/ridefinder/images/mm_20_green.png";
+    "https://labs.google.com/ridefinder/images/mm_20_green.png";
   IconStyle["Route2"] =
-    "http://labs.google.com/ridefinder/images/mm_20_yellow.png";
+    "https://labs.google.com/ridefinder/images/mm_20_yellow.png";
   IconStyle["Route3"] =
-    "http://labs.google.com/ridefinder/images/mm_20_blue.png";
+    "https://labs.google.com/ridefinder/images/mm_20_blue.png";
   IconStyle["Fuel"] =
-    "http://labs.google.com/ridefinder/images/mm_20_purple.png";
+    "https://labs.google.com/ridefinder/images/mm_20_purple.png";
   IconStyle["FoodAndDrink"] =
-    "http://labs.google.com/ridefinder/images/mm_20_orange.png";
+    "https://labs.google.com/ridefinder/images/mm_20_orange.png";
   IconStyle["POI"] = "http://labs.google.com/ridefinder/images/mm_20_brown.png";
 
   // todo: how do I change what info is needed, how do I draw line between markers?
