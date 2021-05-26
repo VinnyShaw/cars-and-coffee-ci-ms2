@@ -87,6 +87,8 @@ header {
 /* Title underline */
 hr {
   border-top: 1px solid #ffff00;
+  padding: 0;
+  margin: 0;
 }
 
 /* *-------------------- Navigation */
@@ -105,8 +107,8 @@ hr {
 }
 .section {
   height: 100%;
-  /* padding-top: 174px; */
-  padding-top: 10rem;
+  /* padding-top: 120px; */
+  padding-top: 7rem;
 }
 
 /* .centered {
@@ -119,9 +121,9 @@ hr {
 /* *-------------------- Where Section */
 
 /* *-------------------- Map */
-
-div#map {
-  min-height: 360px;
+/* todo: make map responsive */
+.map {
+  min-height: 300px;
   color: #282b13;
 }
 

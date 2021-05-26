@@ -56,24 +56,30 @@
       <!-- todo: how to style the nav colours with css files?? -->
       <nav class="row no-gutters navbar navbar-expand-lg navbar-dark">
         <!-- Clickable title -->
-        <div class="col-6 col-sm-9">
+        <div class="col-6 col-sm-6">
           <a href="#what">
-            <h1>CARS & COFFEE</h1>
-            <h2 class="d-none d-md-inline-block">Inverness, Scotland.</h2>
+            <h1 class="d-sm-inline-block">CARS & COFFEE</h1>
+            <h2 class="d-none d-lg-inline-block">Inverness, Scotland.</h2>
             <hr />
           </a>
         </div>
+
         <!-- Theme toggle button -->
-        <div class="col">
-          <button class="btn-toggle" id="btn-toggle" on(click)="themeToggle()">
+        <div class="col col-sm-4">
+          <button
+            class="btn-toggle float-right"
+            id="btn-toggle"
+            on(click)="themeToggle()"
+          >
             <a>Theme</a>
           </button>
         </div>
+
         <!-- Collapsible Nav -->
         <!-- todo: move menu to right and below toggle when xs -->
         <div class="col">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler float-right"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -113,19 +119,19 @@
       <!-- What Section -->
       <!-- todo: add text/image -->
       <div id="what" class="what row no-gutters container-fluid section">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h2>What</h2>
           <div>
             Cars and Coffee Inverness is monthly automotive event where like
             minded car fans get together to show off their cars and socialize.
           </div>
         </div>
-        <div class="col col-md-6">Image to go here</div>
+        <div class="col col-sm-6">Image to go here</div>
       </div>
       <!-- When Section -->
       <!-- todo: add text/image -->
       <div id="when" class="When row no-gutters container-fluid section">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <h2>When</h2>
           <div>
             The main event is held on the 2nd Sunday of each month, between 10am
@@ -150,11 +156,11 @@
       >
         <div class="col-md-6">
           <h2>Where</h2>
-          <div>
+          <!-- <div>
             Each event is held at Rollerbowl, 167 Culduthel Road, Inverness.
-          </div>
+          </div> -->
           <!-- Map -->
-          <div id="map"></div>
+          <div class="map" id="map"></div>
           <!-- Checkboxes for information display toggle -->
           <form class="form-row justify-content-center">
             <div class="form-group form-check-inline">
@@ -238,7 +244,7 @@
           justify-content-center
         "
       >
-        <div class="col form-container section-text centered">
+        <div class="col form-container section-text centered section">
           <h1 class="text-uppercase form-title centered">Get in Touch!</h1>
 
           <!-- Contact Form -->
@@ -252,30 +258,15 @@
                 <!-- Names -->
                 <div class="form-row justify-content-center">
                   <div class="form-group col col-md-10 col-lg-6">
-                    <label for="first-name" class="sr-only">First Name</label>
+                    <label for="name" class="sr-only">Name</label>
                     <input
                       name="first-name"
                       type="text"
                       class="form-control form-control-sm"
-                      id="first-name"
-                      aria-labelledby="first-name"
-                      aria-describedby="first-name"
-                      placeholder="First Name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-row justify-content-center">
-                  <div class="form-group col col-md-10 col-lg-6">
-                    <label for="last-name" class="sr-only">Last Name</label>
-                    <input
-                      name="last-name"
-                      type="text"
-                      class="form-control form-control-sm"
-                      id="last-name"
-                      aria-labelledby="last-name"
-                      aria-describedby="last-name"
-                      placeholder="Last Name"
+                      id="name"
+                      aria-labelledby="name"
+                      aria-describedby="name"
+                      placeholder="Name"
                       required
                     />
                   </div>
@@ -288,7 +279,7 @@
                     <input
                       name="emailaddress"
                       type="email"
-                      class="form-control form-control-md"
+                      class="form-control form-control-sm"
                       id="emailaddress"
                       aria-labelledby="email"
                       aria-describedby="email"
@@ -305,7 +296,7 @@
                     <input
                       name="subject"
                       type="subject"
-                      class="form-control form-control-md"
+                      class="form-control form-control-sm"
                       id="subject"
                       aria-labelledby="subject"
                       aria-describedby="subject"
@@ -338,6 +329,7 @@
             </div>
 
             <!-- Button -->
+            <!-- todo: move to left under message box on col-sm??? -->
             <div class="form-row">
               <div class="form-group col">
                 <button type="submit" class="btn btn-primary btn-submit">
