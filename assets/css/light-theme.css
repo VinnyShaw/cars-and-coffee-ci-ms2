@@ -1,5 +1,7 @@
 /* Light Theme CSS */
 /* todo: this CSS needs styled to be light theme */
+/* todo: go through and check for any redundant rules */
+/* todo: once dark theme css complete, copy to light theme css and invert */
 
 /* *-------------------- Fonts */
 
@@ -10,29 +12,84 @@ html {
   scroll-behavior: smooth;
 }
 
+/* *-------------------- Universals */
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #6c757d;
+  background-color: #ffff00;
+}
+
+a {
+  color: #6c757d;
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+a:hover {
+  color: #282b13;
+  text-decoration: none;
+}
+
 /* *-------------------- Header */
 header {
   /* height: 118px; */
   height: 10rem;
   position: fixed;
 }
-/* *-------------------- Body */
-/* todo: this is not the final colorscheme */
-body {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  color: #4d4d4d;
-  background-color: #ffffff;
+
+/* * Bootstrap rule to keep header element at top of viewport */
+.fixed-top {
+  position: fixed;
+}
+
+/* *-------------------- Theme Toggle */
+/* todo: look at changing this to slider or headlights logo? */
+/* todo: Can I remove/edit the focus and focus-visited rules? */
+
+/* Toggle button classes  */
+
+/* Toggle button  */
+.btn-toggle {
+  background-color: #6c757d;
+  border: solid #282b13 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 5px;
+}
+
+/* Toggle button label  */
+.btn-toggle a {
+  color: #282b13;
+  text-decoration: none;
+}
+
+/* Toggle button hover  */
+.btn-toggle:hover {
+  background-color: #ffff00;
+  border: solid #6c757d 2px;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+/* Toggle button label hover  */
+.btn-toggle a:hover {
+  color: #6c757d;
+  text-decoration: none;
 }
 
 /* *-------------------- Navigation */
 
 .nav-item {
   text-align: right;
+  background-color: #ffff00;
 }
 
 /* *-------------------- Sections */
-/* todo: need to fix keeping content below header and anchors correct */
+
 .section-wrapper {
   /* margin-top: 158px; */
   /* margin-top: 9rem; */
@@ -45,46 +102,63 @@ body {
 }
 
 /* *-------------------- Where Section */
+
+/* *-------------------- Map */
+
 div#map {
   min-height: 360px;
+  color: #282b13;
 }
 
 /* *-------------------- Footer */
 
+footer {
+  background-color: #ffff00;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+/* * Font Awesome Icon Styling */
+footer i {
+  color: #6c757d;
+  margin: 0 7px;
+}
+
+.contact-link a i,
+.talk {
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+.contact-link a i:hover,
+.talk:hover {
+  color: #282b13;
+}
+
+.social-links {
+  margin-bottom: 0;
+}
+
+.social-links li a i {
+  padding: 5px;
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  color: #282b13;
+}
+
 /* *-------------------- Media Queries */
 
 /* todo: Below is under construction */
-/* *-------------------- Theme Toggle */
-
-/* Toggle button classes  */
-
-/* Toggle button  */
-.btn-toggle {
-  background-color: #ffff00;
-  border: solid #282b13 2px;
-  border-radius: 25px;
-  padding: 5px 15px;
-  margin: 5px;
-  /* position: absolute; */
-  /* right: 70px; */
-}
-
-/* Toggle button label  */
-.btn-toggle a {
-  color: #282b13;
-  text-decoration: none;
-}
-
-/* Toggle button hover  */
-.btn-toggle:hover {
-  background-color: #282b13;
-  border: solid #ffff00 2px;
-  border-radius: 25px;
-  padding: 5px 15px;
-}
-
-/* Toggle button label hover  */
-.btn-toggle a:hover {
-  color: #ffff00;
-  text-decoration: none;
-}

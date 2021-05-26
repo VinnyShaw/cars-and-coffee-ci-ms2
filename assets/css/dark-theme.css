@@ -1,5 +1,7 @@
 /* Dark Theme CSS */
 /* todo: this CSS needs styled to be dark theme */
+/* todo: go through and check for any redundant rules */
+/* todo: once dark theme css complete, copy to light theme css and invert */
 
 /* *-------------------- Fonts */
 
@@ -10,14 +12,44 @@ html {
   scroll-behavior: smooth;
 }
 
+/* *-------------------- Universals */
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #ffff00;
+  background-color: #6c757d;
+}
+
+a {
+  color: #ffff00;
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+a:hover {
+  color: #282b13;
+  text-decoration: none;
+}
+
 /* *-------------------- Header */
 header {
   /* height: 118px; */
   height: 10rem;
   position: fixed;
+  background-color: #6c757d;
+}
+
+/* * Bootstrap rule to keep header element at top of viewport */
+.fixed-top {
+  position: fixed;
 }
 
 /* *-------------------- Theme Toggle */
+/* todo: look at changing this to slider or headlights logo? */
+/* todo: Can I remove/edit the focus and focus-visited rules? */
 
 /* Toggle button classes  */
 
@@ -28,8 +60,6 @@ header {
   border-radius: 25px;
   padding: 5px 15px;
   margin: 5px;
-  /* position: absolute; */
-  /* right: 70px; */
 }
 
 /* Toggle button label  */
@@ -40,7 +70,7 @@ header {
 
 /* Toggle button hover  */
 .btn-toggle:hover {
-  background-color: #282b13;
+  background-color: #6c757d;
   border: solid #ffff00 2px;
   border-radius: 25px;
   padding: 5px 15px;
@@ -52,23 +82,11 @@ header {
   text-decoration: none;
 }
 
-/* *-------------------- Body */
-/* todo: this is not the final colorscheme */
-body {
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  color: #ffff00;
-  background-color: #6c757d;
-}
-
-h1 {
-  color: #ffff00;
-}
-
 /* *-------------------- Navigation */
 
 .nav-item {
   text-align: right;
+  background-color: #6c757d;
 }
 
 /* *-------------------- Sections */
@@ -85,11 +103,62 @@ h1 {
 }
 
 /* *-------------------- Where Section */
+
+/* *-------------------- Map */
+
 div#map {
   min-height: 360px;
+  color: #282b13;
 }
 
 /* *-------------------- Footer */
+
+footer {
+  background-color: #6c757d;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #ffff00;
+  text-decoration: none;
+}
+
+/* * Font Awesome Icon Styling */
+footer i {
+  color: #ffff00;
+  margin: 0 7px;
+}
+
+.contact-link a i,
+.talk {
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+.contact-link a i:hover,
+.talk:hover {
+  color: #282b13;
+}
+
+.social-links {
+  margin-bottom: 0;
+}
+
+.social-links li a i {
+  padding: 5px;
+  transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+  color: #282b13;
+}
 
 /* *-------------------- Media Queries */
 
