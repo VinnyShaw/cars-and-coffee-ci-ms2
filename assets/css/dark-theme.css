@@ -105,9 +105,10 @@ hr {
   /* margin-top: 9rem; */
   height: 100vh;
 }
+
+/* todo: media queries to change padding on landscape modes */
 .section {
   height: 100%;
-  /* padding-top: 120px; */
   padding-top: 7rem;
 }
 
