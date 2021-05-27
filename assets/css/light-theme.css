@@ -113,6 +113,27 @@ hr {
   padding-top: 7rem;
 }
 
+/* *-------------------- What Section */
+/* todo: work on image heights */
+.what-image {
+  background: url("../images/mustang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: fit-content;
+}
+
+/* *-------------------- When Section */
+/* todo: needs a different image */
+
+.when-image {
+  background: url("../images/mustang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: fit-content;
+}
+
 /* *-------------------- Where Section */
 
 /* *-------------------- Map */

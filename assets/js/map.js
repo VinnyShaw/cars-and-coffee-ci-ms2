@@ -28,7 +28,6 @@ function initMap() {
     "https://labs.google.com/ridefinder/images/mm_20_purple.png";
   IconStyle["FoodAndDrink"] =
     "https://labs.google.com/ridefinder/images/mm_20_orange.png";
-  IconStyle["POI"] = "http://labs.google.com/ridefinder/images/mm_20_brown.png";
 
   // todo: how do I change what info is needed, how do I draw line between markers?
   // todo: make sure start has a diff colour in each route
@@ -37,8 +36,9 @@ function initMap() {
   // Todo: How to display a route with directions?
 
   // This var is an array of strings of route location info
+  // todo: re-number the last digit in each after added all markers
   var locations = [
-    // Meeting/start point
+    // Meeting/start point of all routes
     ["Rollerbowl", "Food/Drink", "Start", 57.4508937, -4.2249295, 1],
 
     // Route1
@@ -46,12 +46,14 @@ function initMap() {
 
     ["The Dores Inn", "Food/Drink", "Route1", 57.3819217, -4.3353143, 3],
 
+    ["Falls of Foyers", "POI", "Route1", 57.2424245, -4.4994154, 3],
+
     ["Fort Augustus", "Food/Drink", "Route1", 57.1443685, -4.6928865, 4],
 
     ["Drumnadrochit", "Food/Drink", "Route1", 57.3295764, -4.4936363, 5],
 
     // Route2
-    ["Rollerbowl", "Food/Drink", "Start", 57.4508937, -4.2249295, 1],
+    ["Rollerbowl", "Food/Drink", "Route2", 57.4508937, -4.2249295, 1],
 
     ["Rosemarkie", "Food/Drink", "Route2", 57.5911051, -4.1209987, 5],
 
@@ -60,14 +62,41 @@ function initMap() {
     ["Tore", "Testing", "Route2", 57.5405982, -4.3372647, 7],
 
     // Route3
-    ["Rollerbowl", "Food/Drink", "Start", 57.4508937, -4.2249295, 1],
+    ["Rollerbowl", "Food/Drink", "Route3", 57.4508937, -4.2249295, 1],
 
     ["Nairn", "Food/Drink", "Route3", 57.5810886, -3.889248, 8],
 
     ["Furness", "Food/Drink", "Route3", 57.4855782, -3.7376227, 9],
 
     ["Carrbridge", "Testing", "Route3", 57.2845402, -3.8174617, 10],
-    // Fuel/ food/drink, POI
+
+    // Fuel/ Food/drink
+
+    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4515308, -4.2515191, 11],
+
+    ["Tesco", "Food/Drink", "FoodAndDrink", 57.4516699, -4.2512913, 12],
+
+    ["Asda Petrol Station", "Fuel", "Fuel", 57.4494082, -4.2231996, 13],
+
+    ["Asda", "Food/Drink", "FoodAndDrink", 57.4508756, -4.2165246, 14],
+
+    ["Gulf Petrol Station", "Fuel", "Fuel", 57.1459563, -4.6814475, 15],
+
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.3282367, -4.4751315, 16],
+
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.4870786, -4.2208433, 17],
+
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.5405981, -4.3287058, 18],
+
+    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4824777, -4.1806726, 19],
+
+    ["Tesco", "Food/Drink", "FoodAndDrink", 57.483111, -4.1744369, 20],
+
+    ["sainsbury's Petrol Station", "Fuel", "Fuel", 57.5824859, -3.8520364, 21],
+
+    ["Sainsbury's", "Food/Drink", "FoodAndDrink", 57.5815428, -3.8527472, 22],
+
+    ["Pace Petrol Station", "Fuel", "Fuel", 57.2841569, -3.8157643, 21],
   ];
 
   var infowindow = new google.maps.InfoWindow();
@@ -131,6 +160,10 @@ function initMap() {
   hide("Route2");
 
   hide("Route3");
+
+  hide("Fuel");
+
+  hide("FoodAndDrink");
 
   $(".form-check-input").click(function () {
     var cat = $(this).attr("value");

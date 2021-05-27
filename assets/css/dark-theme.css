@@ -119,6 +119,27 @@ hr {
   transform: translate(-50%, -50%);
 } */
 
+/* *-------------------- What Section */
+/* todo: work on image heights */
+.what-image {
+  background: url("../images/mustang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: fit-content;
+  /* min-height: 300px; */
+}
+
+/* *-------------------- When Section */
+
+.when-image {
+  background: url("../images/mustang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 350;
+}
+
 /* *-------------------- Where Section */
 
 /* *-------------------- Map */
