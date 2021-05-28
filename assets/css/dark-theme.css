@@ -200,3 +200,23 @@ footer i {
 /* *-------------------- Media Queries */
 
 /* todo: Below is under construction */
+
+/* * Mobile - xs */
+@media screen and (max-width: 575.98px) {
+}
+
+/* * Landscape - sm */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* * Tablet - md */
+@media screen and (min-width: 768px) {
+}
+
+/* * Mobile landscape - md */
+@media screen and (min-width: 812px) {
+}
+
+/* * Desktop - lg */
+@media screen and (min-width: 992px) {
+}

@@ -137,9 +137,10 @@ hr {
 /* *-------------------- Where Section */
 
 /* *-------------------- Map */
+/* todo: make map responsive */
 
 .map {
-  min-height: 360px;
+  min-height: 300px;
   color: #282b13;
 }
 
