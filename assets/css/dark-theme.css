@@ -109,7 +109,7 @@ hr {
 /* todo: media queries to change padding on landscape modes */
 .section {
   height: 100%;
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
 }
 
 /* .centered {
@@ -127,17 +127,16 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   min-width: fit-content;
-  /* min-height: 300px; */
 }
 
 /* *-------------------- When Section */
-
+/* todo: needs a different image */
 .when-image {
   background: url("../images/mustang.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 350;
+  min-width: fit-content;
 }
 
 /* *-------------------- Where Section */
