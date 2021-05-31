@@ -15,6 +15,14 @@ function sendMail(contactForm) {
       function (error) {
         console.log("FAILED", error);
       }
+    )
+    .then(
+      function clearForm() {
+        document.getElementById('name').value = '';
+        document.getElementById('emailaddress').value = '';
+        document.getElementById('subject').value = '';
+        document.getElementById('message').value = '';
+      }
     );
   return false; // To block from loading a new page
 }

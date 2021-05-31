@@ -29,11 +29,8 @@ function initMap() {
   IconStyle["FoodAndDrink"] =
     "https://labs.google.com/ridefinder/images/mm_20_orange.png";
 
-  // todo: how do I change what info is needed, how do I draw line between markers?
-  // todo: make sure start has a diff colour in each route
+  // todo: how do I draw line between markers?
   // Todo: zoom to fit function?
-  // todo: Need to add fuel stops, food/drink, POI locations
-  // Todo: How to display a route with directions?
 
   // This var is an array of strings of route location info
   // todo: re-number the last digit in each after added all markers
@@ -121,10 +118,10 @@ function initMap() {
         return function () {
           infowindow.setContent(
             locations[i][0] +
-              "<br />" +
-              locations[i][1] +
-              "<br />" +
-              locations[i][2]
+            "<br />" +
+            locations[i][1] +
+            "<br />" +
+            locations[i][2]
           );
 
           infowindow.open(map, marker);
