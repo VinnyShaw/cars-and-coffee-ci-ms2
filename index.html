@@ -56,12 +56,13 @@
         </div>
 
         <!-- todo: change toggle appearance to match wireframes? -->
+        <!-- todo: the on(click) causes an error either way -->
         <!-- Theme toggle button -->
         <div class="col col-sm-4 col-md-2">
           <button
-            class="btn-toggle float-right"
+            class="btn-toggle-theme float-right"
             id="btn-toggle"
-            onclick="themeToggle()"
+            on(click)="themeToggle()"
           >
             <span>Theme</span>
           </button>
@@ -89,13 +90,13 @@
         >
           <ul class="navbar-nav" id="menu">
             <li class="nav-item active">
-              <a class="nav-link" href="#what">What</a>
+              <a class="nav-link" href="#what-section">What</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#when">When</a>
+              <a class="nav-link" href="#when-section">When</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#where">Where</a>
+              <a class="nav-link" href="#where-section">Where</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contactForm">Contact</a>
@@ -110,7 +111,7 @@
     <div class="section-wrapper">
       <!-- What Section -->
       <!-- todo: Tidy image sizing -->
-      <div id="what" class="row no-gutters container-fluid section">
+      <div id="what-section" class="row no-gutters container-fluid section">
         <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
           <h2 class="row justify-content-center text-uppercase">What</h2>
           <div class="section-text">
@@ -123,7 +124,7 @@
 
       <!-- When Section -->
       <!-- todo: Tidy image sizing -->
-      <div id="when" class="row no-gutters container-fluid section">
+      <div id="when-section" class="row no-gutters container-fluid section">
         <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
           <h2 class="row justify-content-center text-uppercase">When</h2>
           <div class="section-text">
@@ -138,7 +139,7 @@
       <!-- Where Section -->
       <!-- todo: tidy/layout/route polylines? -->
       <div
-        id="where"
+        id="where-section"
         class="
           Where
           row

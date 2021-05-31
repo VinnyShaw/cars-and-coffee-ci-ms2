@@ -54,7 +54,7 @@ header {
 /* Toggle button classes  */
 
 /* Toggle button  */
-.btn-toggle {
+.btn-toggle-theme {
   background-color: #ffff00;
   border: solid #282b13 2px;
   border-radius: 25px;
@@ -63,13 +63,13 @@ header {
 }
 
 /* Toggle button label  */
-.btn-toggle a {
+.btn-toggle-theme a {
   color: #282b13;
   text-decoration: none;
 }
 
 /* Toggle button hover  */
-.btn-toggle:hover {
+.btn-toggle-theme:hover {
   background-color: #6c757d;
   border: solid #ffff00 2px;
   border-radius: 25px;
@@ -77,7 +77,7 @@ header {
 }
 
 /* Toggle button label hover  */
-.btn-toggle a:hover {
+.btn-toggle-theme a:hover {
   color: #ffff00;
   text-decoration: none;
 }

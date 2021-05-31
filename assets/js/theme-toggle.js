@@ -2,7 +2,7 @@ console.log("This means theme-toggle.js is linked correctly");
 // THis script switches which CSS stylesheet is referenced by index.html
 
 // Selects the theme toggle button
-const btn = document.querySelector(".btn-toggle");
+const btn = document.querySelector(".btn-toggle-theme");
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
 
