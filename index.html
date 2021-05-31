@@ -48,13 +48,11 @@
         <!-- Clickable title -->
         <div class="col-6 col-sm-6">
           <a href="#what">
-            <h1 class="d-sm-inline-block">
-              CARS & COFFEE
-              <hr />
-            </h1>
+            <h1 class="d-sm-inline-block">CARS & COFFEE</h1>
             <!-- todo: need to get the h2 sub title to sit under title -->
             <!-- <h2 class="d-none d-lg-inline-block">Inverness, Scotland.</h2> -->
           </a>
+          <hr />
         </div>
 
         <!-- todo: change toggle appearance to match wireframes? -->
@@ -63,9 +61,9 @@
           <button
             class="btn-toggle float-right"
             id="btn-toggle"
-            on(click)="themeToggle()"
+            onclick="themeToggle()"
           >
-            <a>Theme</a>
+            <span>Theme</span>
           </button>
         </div>
 
