@@ -1,9 +1,7 @@
-// todo: index.html is linking to email.js correctly but no email received
-
-console.log("This means email.js is linked correctly");
-
+// Console log to show files correctly linked
+console.log("This means sendEmail.js is linked correctly");
+// Function to send the contact form fields contest to the site owner via emailjs
 function sendMail(contactForm) {
-  console.log("This means emailjs.send function called");
   emailjs.send("gmail", "ms2", {
     "name": contactForm.name.value,
     "from_email": contactForm.emailaddress.value,
@@ -20,6 +18,3 @@ function sendMail(contactForm) {
     );
   return false; // To block from loading a new page
 }
-console.log("This is after the emailjs function");
-
-// todo: Why does this work offline but not live???
