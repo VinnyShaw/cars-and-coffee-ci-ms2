@@ -99,7 +99,6 @@ hr {
 }
 
 /* *-------------------- Sections */
-/* todo: need to fix keeping content below header and anchors correct */
 .section-wrapper {
   /* margin-top: 158px; */
   /* margin-top: 9rem; */
@@ -109,15 +108,12 @@ hr {
 /* todo: media queries to change padding on landscape modes */
 .section {
   height: 100%;
-  /* padding-top: 7rem; */
+  padding-top: 5px;
 }
 
-/* .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+.section-text {
+  padding: 10px;
+}
 
 /* *-------------------- What Section */
 /* todo: work on image heights */
@@ -132,7 +128,7 @@ hr {
 /* *-------------------- When Section */
 /* todo: needs a different image */
 .when-image {
-  background: url("../images/Abarth.jpg");
+  background: url("../images/abarth.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,8 +194,6 @@ footer i {
 }
 
 /* *-------------------- Media Queries */
-
-/* todo: Below is under construction */
 
 /* * Mobile - xs */
 @media screen and (max-width: 575.98px) {

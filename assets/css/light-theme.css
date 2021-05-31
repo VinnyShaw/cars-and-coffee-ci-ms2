@@ -110,7 +110,11 @@ hr {
 
 .section {
   height: 100%;
-  /* padding-top: 7rem; */
+  padding-top: 5px;
+}
+
+.section-text {
+  padding: 10px;
 }
 
 /* *-------------------- What Section */
@@ -127,7 +131,7 @@ hr {
 /* todo: needs a different image */
 
 .when-image {
-  background: url("../images/mustang.jpg");
+  background: url("../images/abarth.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,4 +199,54 @@ footer i {
 
 /* *-------------------- Media Queries */
 
-/* todo: Below is under construction */
+/* * Mobile - xs */
+@media screen and (max-width: 575.98px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 300px;
+    color: #282b13;
+  }
+}
+
+/* * Landscape - sm */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 200px;
+    color: #282b13;
+  }
+}
+
+/* * Tablet - md */
+@media screen and (min-width: 768px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 400px;
+    color: #282b13;
+  }
+}
+
+/* * Mobile landscape - md */
+@media screen and (min-width: 812px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 200px;
+    min-width: 500px;
+    color: #282b13;
+  }
+}
+
+/* * Desktop - lg */
+@media screen and (min-width: 992px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 500px;
+    min-width: 800px;
+    color: #282b13;
+  }
+}

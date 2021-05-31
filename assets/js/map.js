@@ -175,15 +175,16 @@ function initMap() {
   });
   // }
 
-  // Todo: Get a polyline between markers/waypoints
-  // Todo: Toggle it with route checkbox
-  // Todo: Perhaps store the array and recall to the render function?
-  // Todo: Make polyline follow roads
-  // Todo: Make polyline toggle with checkboxes
-  // todo: how do I draw line between markers?
+
   // Todo: zoom to fit function?
   // Todo: Check the jshint warning below
   // ToDo: Testing Area below
+
+  // Todo: FUTURE IDEAS:
+  // Todo: Get a polyline between markers/waypoints
+  // Todo: Make polyline toggle with checkboxes
+  // Todo: Perhaps store the array and recall to the render function?
+  // Todo: Make polyline follow roads
 
   // // Route1 coordinates
   // const Route1Coordinates = [
