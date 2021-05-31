@@ -18,7 +18,6 @@ function initMap() {
   var IconStyle = {};
 
   IconStyle.Start =
-    // "https://labs.google.com/ridefinder/images/mm_20_green.png";
     "https://www.google.com/mapfiles/dd-start.png";
   IconStyle.Route1 =
     "https://labs.google.com/ridefinder/images/mm_20_green.png";
@@ -31,10 +30,6 @@ function initMap() {
   IconStyle.FoodAndDrink =
     "https://labs.google.com/ridefinder/images/mm_20_orange.png";
 
-  // todo: how do I draw line between markers?
-  // Todo: zoom to fit function?
-
-  // todo: re-number the last digit in each after added all markers
   var locations = [
     // Meeting/start point of all routes
     ["Rollerbowl", "Food/Drink", "Start", 57.4508937, -4.2249295, 1],
@@ -44,57 +39,61 @@ function initMap() {
 
     ["The Dores Inn", "Food/Drink", "Route1", 57.3819217, -4.3353143, 3],
 
-    ["Falls of Foyers", "POI", "Route1", 57.2424245, -4.4994154, 3],
+    ["Falls of Foyers", "POI", "Route1", 57.2424245, -4.4994154, 4],
 
-    ["Fort Augustus", "Food/Drink", "Route1", 57.1443685, -4.6928865, 4],
+    ["Fort Augustus", "Food/Drink", "Route1", 57.1443685, -4.6928865, 5],
 
-    ["Drumnadrochit", "Food/Drink", "Route1", 57.3295764, -4.4936363, 5],
+    ["Drumnadrochit", "Food/Drink", "Route1", 57.3295764, -4.4936363, 6],
 
     // Route2
     ["Rollerbowl", "Food/Drink", "Route2", 57.4508937, -4.2249295, 1],
 
-    ["Rosemarkie", "Food/Drink", "Route2", 57.5911051, -4.1209987, 5],
+    ["Avoch", "Food/Drink", "Route2", 57.5667647, -4.1801286, 7],
 
-    ["Cromarty", "Food/Drink", "Route2", 57.6800112, -4.0377614, 6],
+    ["Rosemarkie", "Food/Drink", "Route2", 57.5911051, -4.1209987, 8],
 
-    ["Tore", "Testing", "Route2", 57.5405982, -4.3372647, 7],
+    ["Cromarty", "Food/Drink", "Route2", 57.6800112, -4.0377614, 9],
+
+    ["Culbokie", "Food/Drink", "Route2", 57.6014132, -4.3471774, 01],
+
+    ["Tore", "Testing", "Route2", 57.5405982, -4.3372647, 11],
 
     // Route3
     ["Rollerbowl", "Food/Drink", "Route3", 57.4508937, -4.2249295, 1],
 
-    ["Nairn", "Food/Drink", "Route3", 57.5810886, -3.889248, 8],
+    ["Nairn", "Food/Drink", "Route3", 57.5810886, -3.889248, 12],
 
-    ["Furness", "Food/Drink", "Route3", 57.4855782, -3.7376227, 9],
+    ["Furness", "Food/Drink", "Route3", 57.4855782, -3.7376227, 13],
 
-    ["Carrbridge", "Testing", "Route3", 57.2845402, -3.8174617, 10],
+    ["Carrbridge", "Testing", "Route3", 57.2845402, -3.8174617, 14],
 
     // Fuel/ Food/drink
 
-    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4515308, -4.2515191, 11],
+    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4515308, -4.2515191, 15],
 
-    ["Tesco", "Food/Drink", "FoodAndDrink", 57.4516699, -4.2512913, 12],
+    ["Tesco", "Food/Drink", "FoodAndDrink", 57.4516699, -4.2512913, 16],
 
-    ["Asda Petrol Station", "Fuel", "Fuel", 57.4494082, -4.2231996, 13],
+    ["Asda Petrol Station", "Fuel", "Fuel", 57.4494082, -4.2231996, 17],
 
-    ["Asda", "Food/Drink", "FoodAndDrink", 57.4508756, -4.2165246, 14],
+    ["Asda", "Food/Drink", "FoodAndDrink", 57.4508756, -4.2165246, 18],
 
-    ["Gulf Petrol Station", "Fuel", "Fuel", 57.1459563, -4.6814475, 15],
+    ["Gulf Petrol Station", "Fuel", "Fuel", 57.1459563, -4.6814475, 19],
 
-    ["Esso Petrol Station", "Fuel", "Fuel", 57.3282367, -4.4751315, 16],
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.3282367, -4.4751315, 20],
 
-    ["Esso Petrol Station", "Fuel", "Fuel", 57.4870786, -4.2208433, 17],
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.4870786, -4.2208433, 21],
 
-    ["Esso Petrol Station", "Fuel", "Fuel", 57.5405981, -4.3287058, 18],
+    ["Esso Petrol Station", "Fuel", "Fuel", 57.5405981, -4.3287058, 22],
 
-    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4824777, -4.1806726, 19],
+    ["Tesco Petrol Station", "Fuel", "Fuel", 57.4824777, -4.1806726, 23],
 
-    ["Tesco", "Food/Drink", "FoodAndDrink", 57.483111, -4.1744369, 20],
+    ["Tesco", "Food/Drink", "FoodAndDrink", 57.483111, -4.1744369, 24],
 
-    ["sainsbury's Petrol Station", "Fuel", "Fuel", 57.5824859, -3.8520364, 21],
+    ["sainsbury's Petrol Station", "Fuel", "Fuel", 57.5824859, -3.8520364, 25],
 
-    ["Sainsbury's", "Food/Drink", "FoodAndDrink", 57.5815428, -3.8527472, 22],
+    ["Sainsbury's", "Food/Drink", "FoodAndDrink", 57.5815428, -3.8527472, 26],
 
-    ["Pace Petrol Station", "Fuel", "Fuel", 57.2841569, -3.8157643, 21],
+    ["Pace Petrol Station", "Fuel", "Fuel", 57.2841569, -3.8157643, 27],
   ];
 
   var infowindow = new google.maps.InfoWindow();
@@ -181,6 +180,8 @@ function initMap() {
   // Todo: Perhaps store the array and recall to the render function?
   // Todo: Make polyline follow roads
   // Todo: Make polyline toggle with checkboxes
+  // todo: how do I draw line between markers?
+  // Todo: zoom to fit function?
   // Todo: Check the jshint warning below
   // ToDo: Testing Area below
 
