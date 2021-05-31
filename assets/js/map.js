@@ -1,5 +1,7 @@
+// Logs confirmation that the files are linked correctly
 console.log("This means map.js is linked correctly");
-// Renders the map centered at Inverness, Scotland.
+
+// Renders the map centered and zoomed for Inverness, Scotland.
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8.5,
@@ -10,29 +12,28 @@ function initMap() {
     mapTypeId: "roadmap",
   });
 
-  // Declares var markers as an array
-  var markers = new Array();
 
-  // Assigns different marker icons to each route
+  var markers = [];
+
   var IconStyle = {};
 
-  IconStyle["Start"] =
+  IconStyle.Start =
+    // "https://labs.google.com/ridefinder/images/mm_20_green.png";
+    "https://www.google.com/mapfiles/dd-start.png";
+  IconStyle.Route1 =
     "https://labs.google.com/ridefinder/images/mm_20_green.png";
-  IconStyle["Route1"] =
-    "https://labs.google.com/ridefinder/images/mm_20_green.png";
-  IconStyle["Route2"] =
+  IconStyle.Route2 =
     "https://labs.google.com/ridefinder/images/mm_20_yellow.png";
-  IconStyle["Route3"] =
+  IconStyle.Route3 =
     "https://labs.google.com/ridefinder/images/mm_20_blue.png";
-  IconStyle["Fuel"] =
+  IconStyle.Fuel =
     "https://labs.google.com/ridefinder/images/mm_20_purple.png";
-  IconStyle["FoodAndDrink"] =
+  IconStyle.FoodAndDrink =
     "https://labs.google.com/ridefinder/images/mm_20_orange.png";
 
   // todo: how do I draw line between markers?
   // Todo: zoom to fit function?
 
-  // This var is an array of strings of route location info
   // todo: re-number the last digit in each after added all markers
   var locations = [
     // Meeting/start point of all routes
@@ -180,7 +181,7 @@ function initMap() {
   // Todo: Perhaps store the array and recall to the render function?
   // Todo: Make polyline follow roads
   // Todo: Make polyline toggle with checkboxes
-  // Todo: Simplify the script
+  // Todo: Check the jshint warning below
   // ToDo: Testing Area below
 
   // // Route1 coordinates
@@ -201,3 +202,8 @@ function initMap() {
   // // Sets it to the map
   // Route1.setMap(map);
 }
+
+// todo: jshint warnings
+// jshint results:
+// One warnings
+// 132	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (infowindow, locations, map)
