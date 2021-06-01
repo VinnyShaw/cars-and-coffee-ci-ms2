@@ -1,5 +1,5 @@
-/* Dark Theme CSS */
-/* todo: this CSS needs styled to be dark theme */
+/* *-------------------- Dark Theme CSS */
+
 /* todo: go through and check for any redundant rules */
 /* todo: once dark theme css complete, copy to light theme css and invert */
 
@@ -48,8 +48,6 @@ header {
 }
 
 /* *-------------------- Theme Toggle */
-/* todo: look at changing this to slider or headlights logo? */
-/* todo: Can I remove/edit the focus and focus-visited rules? */
 
 /* Toggle button classes  */
 
@@ -63,7 +61,7 @@ header {
 }
 
 /* Toggle button label  */
-.btn-toggle-theme a {
+.btn-toggle-theme span {
   color: #282b13;
   text-decoration: none;
 }
@@ -77,18 +75,15 @@ header {
 }
 
 /* Toggle button label hover  */
-.btn-toggle-theme a:hover {
+.btn-toggle-theme span:hover {
   color: #ffff00;
   text-decoration: none;
 }
 
-/* *-------------------- Underline */
+/* *-------------------- Logo */
 
-/* Title underline */
-hr {
-  border-top: 1px solid #ffff00;
-  padding: 0;
-  margin: 0;
+.logo {
+  border-bottom: 1px solid #ffff00;
 }
 
 /* *-------------------- Navigation */
@@ -109,13 +104,13 @@ hr {
 }
 
 /* *-------------------- Sections */
+
 .section-wrapper {
   /* margin-top: 158px; */
   /* margin-top: 9rem; */
   height: 100vh;
 }
 
-/* todo: media queries to change padding on landscape modes */
 .section {
   height: 100%;
   padding-top: 5px;
@@ -136,7 +131,7 @@ hr {
 }
 
 /* *-------------------- When Section */
-/* todo: needs a different image */
+
 .when-image {
   background: url("../images/fiat-abarth.jpg");
   background-position: center;
@@ -149,6 +144,7 @@ hr {
 
 /* *-------------------- Map */
 /* todo: make map responsive */
+
 .map {
   min-height: 300px;
   color: #282b13;
@@ -267,7 +263,6 @@ footer i {
     color: #282b13;
   }
 
-  /* todo: this is where i am working just now */
   .what-image {
     max-height: 500px;
   }

@@ -1,5 +1,5 @@
-/* Light Theme CSS */
-/* todo: this CSS needs styled to be light theme */
+/* *-------------------- Light Theme CSS */
+
 /* todo: go through and check for any redundant rules */
 /* todo: once dark theme css complete, copy to light theme css and invert */
 
@@ -48,8 +48,6 @@ header {
 }
 
 /* *-------------------- Theme Toggle */
-/* todo: look at changing this to slider or headlights logo? */
-/* todo: Can I remove/edit the focus and focus-visited rules? */
 
 /* Toggle button classes  */
 
@@ -63,32 +61,29 @@ header {
 }
 
 /* Toggle button label  */
-.btn-toggle-theme a {
-  color: #282b13;
+.btn-toggle-theme span {
+  color: #ffff00;
   text-decoration: none;
 }
 
 /* Toggle button hover  */
 .btn-toggle-theme:hover {
   background-color: #ffff00;
-  border: solid #6c757d 2px;
+  border: solid 2px;
   border-radius: 25px;
   padding: 5px 15px;
 }
 
 /* Toggle button label hover  */
-.btn-toggle-theme a:hover {
+.btn-toggle-theme span:hover {
   color: #6c757d;
   text-decoration: none;
 }
 
-/* *-------------------- Underline */
+/* *-------------------- Logo */
 
-/* Title underline */
-hr {
-  border-top: 1px solid #6c757d;
-  padding: 0;
-  margin: 0;
+.logo {
+  border-bottom: 1px solid #6c757d;
 }
 
 /* *-------------------- Navigation */
@@ -116,8 +111,6 @@ hr {
   height: 100vh;
 }
 
-/* todo: media queries to change padding on landscape modes */
-
 .section {
   height: 100%;
   padding-top: 5px;
@@ -138,7 +131,6 @@ hr {
 }
 
 /* *-------------------- When Section */
-/* todo: needs a different image */
 
 .when-image {
   background: url("../images/fiat-abarth.jpg");
