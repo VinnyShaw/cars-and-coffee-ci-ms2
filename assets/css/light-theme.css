@@ -98,6 +98,16 @@ hr {
   background-color: #ffff00;
 }
 
+/* *-------------------- Custom Nav styling */
+.custom-toggler.navbar-toggler {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108,117,125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 /* *-------------------- Sections */
 
 .section-wrapper {
@@ -217,28 +227,6 @@ footer i {
     min-height: 200px;
     color: #282b13;
   }
-}
-
-/* * Tablet - md */
-@media screen and (min-width: 768px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
-  .map {
-    min-height: 400px;
-    color: #282b13;
-  }
-}
-
-/* * Mobile landscape - md */
-@media screen and (min-width: 812px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
-  .map {
-    min-height: 200px;
-    min-width: 500px;
-    color: #282b13;
-  }
-
   .what-image {
     background: url("../images/ford-mustang.jpg");
     background-position: center;
@@ -253,6 +241,40 @@ footer i {
     background-repeat: no-repeat;
     background-size: cover;
     min-width: fit-content;
+    max-height: 500px;
+  }
+}
+
+/* * Tablet - md */
+@media screen and (min-width: 768px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 400px;
+    color: #282b13;
+  }
+  .what-image {
+    max-height: 500px;
+  }
+  .when-image {
+    max-height: 500px;
+  }
+}
+
+/* * Mobile landscape - md */
+@media screen and (min-width: 812px) {
+  /* *-------------------- Map */
+  /* todo: make map responsive */
+  .map {
+    min-height: 200px;
+    min-width: 500px;
+    color: #282b13;
+  }
+
+  .what-image {
+    max-height: 500px;
+  }
+  .when-image {
     max-height: 500px;
   }
 }
