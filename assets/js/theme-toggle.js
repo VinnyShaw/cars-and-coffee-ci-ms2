@@ -18,3 +18,16 @@ btn.addEventListener("click", function () {
     theme.href = "assets/css/dark-theme.css";
   }
 });
+
+// todo: testing
+
+// btn - toggle - theme
+
+// var element = document.querySelector('.btn-toggle-theme');
+
+// element.addEventListener("click", function (e) {
+//   alert('something');
+// }, false);
+
+// todo:
+// on(click)="themeToggle()"
