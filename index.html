@@ -54,13 +54,13 @@
         <!-- todo: the on(click) causes an error either way -->
         <!-- Theme toggle button -->
         <div class="col col-sm-4 col-md-2 col-lg-2 col-xl-4">
-          <button
+          <div
             class="btn-toggle-theme float-right"
             id="btn-toggle-theme"
             on(click)="themeToggle()"
           >
             <span class="text-uppercase">Theme</span>
-          </button>
+          </div>
         </div>
 
         <!-- Collapsible Nav -->
@@ -265,13 +265,12 @@
                     <label for="subject" class="sr-only">Subject</label>
                     <input
                       name="subject"
-                      type="subject"
+                      type="text"
                       class="form-control form-control-sm"
                       id="subject"
                       aria-labelledby="subject"
                       aria-describedby="subject"
                       placeholder="Subject"
-                      required
                     />
                   </div>
                 </div>
