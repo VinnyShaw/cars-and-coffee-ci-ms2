@@ -251,6 +251,13 @@ footer i {
   .when-image {
     max-height: 500px;
   }
+  .section {
+    /* height: 100%; */
+    padding: 50px;
+  }
+  header {
+    padding-left: 50px;
+  }
 }
 
 /* * Mobile landscape - md */
@@ -279,5 +286,13 @@ footer i {
     min-height: 600px;
     min-width: 800px;
     color: #282b13;
+  }
+  .section {
+    /* height: 100%; */
+    padding: 100px;
+  }
+  /* todo: this is where i am working */
+  header {
+    padding: 0 120px 0 100px;
   }
 }
