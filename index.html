@@ -32,9 +32,8 @@
     <!-- Custom CSS Theme stylesheet -->
     <link href="assets/css/dark-theme.css" rel="stylesheet" id="theme-link" />
 
-    <!-- todo: this needs an image -->
     <!-- Favicon -->
-    <link rel="icon" href="..." />
+    <link rel="icon" href="assets/images/favicon-light.ico" />
     <title>Cars and Coffee</title>
   </head>
 
@@ -70,9 +69,9 @@
 
         <!-- Collapsible Nav -->
         <!-- todo: move menu to right and below toggle when xs -->
-        <div class="col-2 col-md">
+        <div class="col-2 col-md col-lg">
           <button
-            class="navbar-toggler float-right"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -85,7 +84,7 @@
         </div>
 
         <div
-          class="collapse navbar-collapse col-md"
+          class="collapse navbar-collapse col-md col-lg"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav" id="menu">
@@ -137,7 +136,6 @@
       </div>
 
       <!-- Where Section -->
-      <!-- todo: tidy/layout/route polylines? -->
       <div
         id="where-section"
         class="
@@ -237,7 +235,6 @@
           </h1>
 
           <!-- Contact Form -->
-          <!-- Todo: This form needs updated to use emailjs and have all the classes checked -->
           <form onsubmit="return sendMail(this);">
             <!-- Input area -->
             <div class="form-row justify-content-center">
