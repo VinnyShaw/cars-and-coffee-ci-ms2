@@ -29,7 +29,7 @@
       })();
     </script>
 
-    <!-- Custom CSS Theme stylesheet -->
+    <!-- Custom CSS -->
     <link href="assets/css/dark-theme.css" rel="stylesheet" id="theme-link" />
 
     <!-- Favicon -->
@@ -40,7 +40,6 @@
   <body>
     <!-- Header -->
     <header class="fixed-top">
-      <!-- todo: work on rows and cols so that nav responsive -->
       <!-- Navigation -->
       <nav class="row no-gutters navbar navbar-expand-lg">
         <!-- Clickable title -->
@@ -57,7 +56,7 @@
         <div class="col col-sm-4 col-md-2 col-lg-2 col-xl-4">
           <button
             class="btn-toggle-theme float-right"
-            id="btn-toggle"
+            id="btn-toggle-theme"
             on(click)="themeToggle()"
           >
             <span class="text-uppercase">Theme</span>
@@ -65,7 +64,6 @@
         </div>
 
         <!-- Collapsible Nav -->
-        <!-- todo: move menu to right and below toggle when xs -->
         <div class="col-2 col-md col-lg">
           <button
             class="navbar-toggler custom-toggler"
@@ -106,20 +104,19 @@
     <!-- Wrapper -->
     <div class="section-wrapper">
       <!-- What Section -->
-      <!-- todo: Tidy image sizing -->
       <div id="what-section" class="row no-gutters container-fluid section">
         <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
           <h2 class="row justify-content-center text-uppercase">What</h2>
           <div class="section-text">
             Cars and Coffee Inverness is monthly automotive event where like
-            minded car fans get together to show off their cars and socialize.
+            minded car enthusiasts get together to show off their cars and
+            socialize.
           </div>
         </div>
         <div class="what-image col-12 col-sm-6 col-md-6 col-lg-6"></div>
       </div>
 
       <!-- When Section -->
-      <!-- todo: Tidy image sizing -->
       <div id="when-section" class="row no-gutters container-fluid section">
         <div class="col-sm-6 col-md-6 col-lg-6 align-self-center">
           <h2 class="row justify-content-center text-uppercase">When</h2>
@@ -135,20 +132,14 @@
       <!-- Where Section -->
       <div
         id="where-section"
-        class="
-          Where
-          row
-          no-gutters
-          container-fluid
-          section
-          justify-content-center
-        "
+        class="row no-gutters container-fluid section justify-content-center"
       >
         <div class="col-sm-10 col-md6 col-lg-12 align-self-center">
           <h2 class="row justify-content-center text-uppercase">Where</h2>
 
           <!-- Map -->
           <div class="map" id="map"></div>
+
           <!-- Checkboxes for information display toggle -->
           <form class="form-row justify-content-center">
             <div class="form-group form-check-inline">
@@ -212,9 +203,6 @@
       </div>
 
       <!-- Contact Section-->
-      <!-- todo: Add image to match wireframes? -->
-      <!-- todo: Submit success confirm message and interaction -->
-      <!-- todo: Form reset after submit -->
       <div
         id="contactForm"
         class="
@@ -320,6 +308,7 @@
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer class="container-fluid fixed-bottom">
       <div class="row">
@@ -384,6 +373,7 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+
     <!-- Re-collapse nav after anchor selection script -->
     <script>
       $(".navbar-collapse a").click(function () {

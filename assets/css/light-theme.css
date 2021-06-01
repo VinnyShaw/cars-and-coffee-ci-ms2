@@ -1,8 +1,5 @@
 /* *-------------------- Light Theme CSS */
 
-/* todo: go through and check for any redundant rules */
-/* todo: once dark theme css complete, copy to light theme css and invert */
-
 /* *-------------------- Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
@@ -35,9 +32,8 @@ a:hover {
 }
 
 /* *-------------------- Header */
+
 header {
-  /* height: 118px; */
-  /* height: 10rem; */
   position: fixed;
   background-color: #ffff00;
 }
@@ -49,9 +45,9 @@ header {
 
 /* *-------------------- Theme Toggle */
 
-/* Toggle button classes  */
+/* *Toggle button classes  */
 
-/* Toggle button  */
+/* *Toggle button  */
 .btn-toggle-theme {
   background-color: #6c757d;
   border: solid #282b13 2px;
@@ -60,13 +56,13 @@ header {
   margin: 5px;
 }
 
-/* Toggle button label  */
+/* *Toggle button label  */
 .btn-toggle-theme span {
   color: #ffff00;
   text-decoration: none;
 }
 
-/* Toggle button hover  */
+/* *Toggle button hover  */
 .btn-toggle-theme:hover {
   background-color: #ffff00;
   border: solid 2px;
@@ -74,7 +70,7 @@ header {
   padding: 5px 15px;
 }
 
-/* Toggle button label hover  */
+/* *Toggle button label hover  */
 .btn-toggle-theme span:hover {
   color: #6c757d;
   text-decoration: none;
@@ -106,8 +102,6 @@ header {
 /* *-------------------- Sections */
 
 .section-wrapper {
-  /* margin-top: 158px; */
-  /* margin-top: 9rem; */
   height: 100vh;
 }
 
@@ -121,7 +115,7 @@ header {
 }
 
 /* *-------------------- What Section */
-/* todo: work on image heights */
+
 .what-image {
   background: url("../images/ford-mustang.jpg");
   background-position: center;
@@ -143,7 +137,6 @@ header {
 /* *-------------------- Where Section */
 
 /* *-------------------- Map */
-/* todo: make map responsive */
 
 .map {
   min-height: 300px;
@@ -203,8 +196,6 @@ footer i {
 
 /* * Mobile - xs */
 @media screen and (max-width: 575.98px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
   .map {
     min-height: 300px;
     color: #282b13;
@@ -213,8 +204,6 @@ footer i {
 
 /* * Landscape - sm */
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
   .map {
     min-height: 200px;
     color: #282b13;
@@ -239,8 +228,6 @@ footer i {
 
 /* * Tablet - md */
 @media screen and (min-width: 768px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
   .map {
     min-height: 400px;
     color: #282b13;
@@ -258,12 +245,13 @@ footer i {
   header {
     padding-left: 50px;
   }
+  .section-text {
+    font-size: 1.2rem;
+  }
 }
 
 /* * Mobile landscape - md */
 @media screen and (min-width: 812px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
   .map {
     min-height: 200px;
     min-width: 500px;
@@ -280,8 +268,6 @@ footer i {
 
 /* * Desktop - lg */
 @media screen and (min-width: 992px) {
-  /* *-------------------- Map */
-  /* todo: make map responsive */
   .map {
     min-height: 600px;
     min-width: 800px;
@@ -291,8 +277,10 @@ footer i {
     /* height: 100%; */
     padding: 100px;
   }
-  /* todo: this is where i am working */
   header {
     padding: 0 120px 0 100px;
+  }
+  .section-text {
+    font-size: 1.5rem;
   }
 }
