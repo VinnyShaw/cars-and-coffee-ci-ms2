@@ -12,7 +12,6 @@ function initMap() {
     mapTypeId: "roadmap",
   });
 
-
   var markers = [];
 
   var IconStyle = {};
@@ -54,7 +53,7 @@ function initMap() {
 
     ["Cromarty", "Food/Drink", "Route2", 57.6800112, -4.0377614, 9],
 
-    ["Culbokie", "Food/Drink", "Route2", 57.6014132, -4.3471774, 01],
+    ["Culbokie", "Food/Drink", "Route2", 57.6014132, -4.3471774, 10],
 
     ["Tore", "Testing", "Route2", 57.5405982, -4.3372647, 11],
 
@@ -173,39 +172,4 @@ function initMap() {
       hide(cat);
     }
   });
-  // }
-
-
-  // Todo: zoom to fit function?
-  // Todo: Check the jshint warning below
-  // ToDo: Testing Area below
-
-  // Todo: FUTURE IDEAS:
-  // Todo: Get a polyline between markers/waypoints
-  // Todo: Make polyline toggle with checkboxes
-  // Todo: Perhaps store the array and recall to the render function?
-  // Todo: Make polyline follow roads
-
-  // // Route1 coordinates
-  // const Route1Coordinates = [
-  //   { lat: 57.4508937, lng: -4.2249295 },
-  //   { lat: 57.3819217, lng: -4.3353143 },
-  //   { lat: 57.1443685, lng: -4.6928865 },
-  //   { lat: 57.3295764, lng: -4.4936363 },
-  // ];
-  // // creates the polyline
-  // const Route1 = new google.maps.Polyline({
-  //   path: Route1Coordinates,
-  //   geodesic: true,
-  //   strokeColor: "#00FF00",
-  //   strokeOpacity: 1.0,
-  //   strokeWeight: 2,
-  // });
-  // // Sets it to the map
-  // Route1.setMap(map);
 }
-
-// todo: jshint warnings
-// jshint results:
-// One warnings
-// 132	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (infowindow, locations, map)
