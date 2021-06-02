@@ -4,6 +4,8 @@
 
 Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
+An interactive website providing information for the regular automotive event **Cars and Coffee**, held in Inverness, Scotland.
+
 ## Wireframes, mockups and screenshots
 
 ![Responsive site demo](assets/wireframes/cars-and-coffee-responsive-demo.png "Responsive site demo")

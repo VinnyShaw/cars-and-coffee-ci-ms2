@@ -1,4 +1,6 @@
-# CARS and COFFEE
+![Cars & Coffee](assets/images/favicon-light.ico "Cars & Coffee")
+
+# CARS & COFFEE
 
 Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
@@ -177,10 +179,6 @@ The aim of this website is to allow the user to find information about the event
    3. Attempt to submit the form with an invalid data and verify that a relevant error message appears.
    4. Attempt to submit the form with all inputs valid and verify that a success message is console logged.
 
-## Bugs and fixes
-
-<!-- todo: think on this section -->
-
 ## Deployment
 
 - GitHub Pages
@@ -235,11 +233,11 @@ The project was deployed to GitHub Pages
 
 ## Credits
 
-<!-- todo: think on this section -->
+- Google Maps API documentation and tutorials were referenced when coding the maps.js file scripts.
 
 ### Code
 
-<!-- todo: think on this section -->
+- Google Maps API documentation and tutorials were referenced when coding the maps.js file scripts.
 
 ### Content
 
