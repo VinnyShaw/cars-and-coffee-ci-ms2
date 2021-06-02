@@ -143,6 +143,18 @@ header {
   color: #282b13;
 }
 
+/* *-------------------- Contact Section */
+
+.btn-submit {
+  color: #ffff00;
+  background-color: #4e555a;
+  border: #fafafa;
+}
+
+.btn-submit:hover {
+  background-color: #669999;
+}
+
 /* *-------------------- Footer */
 
 footer {

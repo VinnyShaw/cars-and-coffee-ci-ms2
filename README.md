@@ -91,7 +91,7 @@ The aim of this website is to allow the user to find information about the event
 
 #### Online and automated
 
-<!-- - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
 - The Lighthouse website scoring system was used to test and rate the websites performance.
 
@@ -107,17 +107,17 @@ The aim of this website is to allow the user to find information about the event
 
 - After each test, the appropriate suggested changes were carried out, giving the site a score of:
 
-  - Performance (83%)
-  - Accessability (100%)
+  - Performance (80%)
+  - Accessability (96%)
   - Best Practices (100%)
   - SEO (100%).
-  - [Full Results here](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvinnyshaw.github.io%2Fvinny-shaw-photography-ci-ms1%2F%23about&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#performance)
+  - [Full Results here](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvinnyshaw.github.io%2Fcars-and-coffee-ci-ms2%2F%23contact&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
 
 - [Wave](https://wave.webaim.org/) Web Accessibility Valuation Tool
 
   - Used to check accessibility of the site and its features.
   - Initial test showed Contrast Errors regarding text - Fixed by altering background-color and text color on flagged elements.
-  - [Full Results here](https://wave.webaim.org/report#/https://vinnyshaw.github.io/vinny-shaw-photography-ci-ms1/#home)
+  - [Full Results here](https://wave.webaim.org/report#/https://vinnyshaw.github.io/cars-and-coffee-ci-ms2/#what)
 
 - [Google](https://developers.google.com/speed/pagespeed/insights/) Page Speed Insights
 
@@ -166,7 +166,7 @@ The aim of this website is to allow the user to find information about the event
    4. Attempt to submit the form with all inputs valid and verify that a success message appears.
 
 5. JQuery:
-   1. Scroll through site and check that section text areas opacity fade out before header section. -->
+   1. Scroll through site and check that section text areas opacity fade out before header section.
 
 ## Bugs and fixes
 
