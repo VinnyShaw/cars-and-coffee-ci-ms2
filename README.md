@@ -4,11 +4,11 @@ Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
 An interactive website providing information for the regular automotive event **Cars and Coffee**, held in Inverness, Scotland.
 
-<!-- ![Responsive site demo](assets/wireframes/vs-photography-responsive-demo.png "Responsive site demo") -->
+![Responsive site demo](assets/wireframes/cars-and-coffee-responsive-demo.png "Responsive site demo")
 
-<!-- ## [Click to visit live demo site](https://vinnyshaw.github.io/vinny-shaw-photography-ci-ms1/#home) -->
+## [Click to visit live demo site](https://vinnyshaw.github.io/cars-and-coffee-ci-ms2/#what)
 
-<!-- ![Valid CSS](assets/img/vcss-blue.gif "Valid CSS") -->
+![Valid CSS](assets/images/vcss-blue.gif "Valid CSS")
 
 ## Table of contents
 
@@ -25,12 +25,12 @@ The aim of this website is to allow the user to find information about the event
 
 - A user may wish to know the time and location of the event.
 - A user may wish to see a map detailing the the location of the event or any other planned activities.
-- A user may wish to easily contact the organisers of the event regarding attending or ask for additional information.
+- A user may wish to easily contact the organizers of the event regarding attending or ask for additional information.
 - A user may wish to find out what the theme of the event by reading a clear description.
 - A user may wish to see where the event is by looking at its location on google maps.
 - A user may wish to know when the event is in a clear event listing.
 - A user may wish to find the events social media accounts and be able to follow a link to them.
-- A user may wish to contact the event organisers by use of a simple form.
+- A user may wish to contact the event organizers by use of a simple form.
 - A user may wish to see the routes driven on the events.
 - A user may wish to toggle the information displayed on the route maps.
 - A user may wish to toggle the colour scheme of the site between light and dark modes.
@@ -41,75 +41,77 @@ The aim of this website is to allow the user to find information about the event
 
 #### Existing
 
-- **What** - allows users to learn about Cars and Coffee by reading a short description.
-- **When** - gives the user the date/time of the event or any additional activities.
-- **Where** - provides the user with the location of the event and any additional activities utilising the Google Maps API.
-- **Contact** - allows the user to quickly contact the site owner by filling out and submitting a short form which will utilise emailJS.
+- **WHAT section** - allows users to learn about Cars and Coffee by reading a short description of the event.
+- **WHEN section** - gives the user the date/time of the event or any additional activities.
+- **WHERE section** - provides the user with the location of the event and any additional activities utilizing the Google Maps API.
+- **CONTACT section** - allows the user to quickly contact the site owner by filling out and submitting a short form which will utilise [emailJS](https://www.emailjs.com/) to submit the contents of the completed form in an email to the event organizers.
 - **Social media links** - the footer offers external links to the owners various social media accounts which will open in a new tab.
 - **Contact link** - a user wishing to contact the owner, from any point of the site, can simply click the internal link to take them to the Contact section.
-- **Theme switching** - a toggle in the header will allow the user to switch between Light and Dark site themes. The users system preferences will also trigger this preference.
+- **Theme switching** - a toggle in the header will allow the user to switch between Light and Dark site themes. This operation is carried out by custom Javascript.
 
-#### Future Options
+#### Future Options and Implementations
 
 - **Gallery** - a gallery displaying photographs taken at the event could be added.
+- **Theme** - a function to allow the users system preference to toggle the site theme could be added.
+- **Routes** - polylines linking map location markers for routes could be added.
+- **Google Maps** - an option to open the routes in Google Maps could be added.
 
 ## Technologies Used
 
-<!-- - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-  - The basic level elements of the site are built using this markup language.
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- The basic level elements of the site are built using this markup language.
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-  - The custom styling and responsive media queries are written in CSS.
-- [JQuery](https://jquery.com)
-  - A script has been used to aid the minimal design by fading out the opacity of section text, as the user scrolls, to avoid any clashes with the navigation menu in the transparent header.
-  - This is achieved by assigning a class to any section content text. The distance from elements using the class, to the top of the viewport is then calculated. As each element reaches the assigned threshold, it's opacity will be faded out before it reaches the Header element.
-  - [Script credit](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/README.md#credits)
+  - The custom styling and responsive media queries are written in **CSS**.
+- [Javascript](https://www.javascript.com)
+  - The sites theme toggle, form submission and Google Maps API integration all use **Javascript** for their functionality.
 - [Bootstrap V4.5.3](https://getbootstrap.com)
   - The site was developed using the **Bootstrap** CSS Framework for a mobile-first responsive design. This framework has been used, along with custom CSS, for the site layout, gallery carousel and contact form.
 - [Font Awesome](https://fontawesome.com)
   - Ready made, customizable icons from **Font Awesome** have been used for the Contact and Social Media links.
 - [Google Fonts](https://fonts.google.com)
   - The font _Work Sans_ from **Google Fonts** has been used to aid the minimal typography style choice of the design.
+- [Gauger.io](https://gauger.io/fonticon/)
+  - Gauger was used to create the sites Favicon.
 - [TinyPNG](https://tinypng.com)
   - Used to compress all images on the site to aid loading times/scores.
-- [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html?gclid=CjwKCAiAsOmABhAwEiwAEBR0Zt4AD1ChwqUicjp6fg8v7YMdcTuY16QHG-_EMVapRGworCvLTsjM4RoChGYQAvD_BwE&mv=search&sdid=LZ32SYVR&ef_id=CjwKCAiAsOmABhAwEiwAEBR0Zt4AD1ChwqUicjp6fg8v7YMdcTuY16QHG-_EMVapRGworCvLTsjM4RoChGYQAvD_BwE:G:s&s_kwcid=AL!3085!3!441664377297!e!!g!!adobe%20photoshop!1422700211!58647953511)
-  - Used for the cropping of site images and the favicon creation.
 - [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAiAsOmABhAwEiwAEBR0ZizFJhaYUCI4lrf8IEXtlweqEzcF8b4TbgglM3G-kwnDx5B75t70mxoCuXMQAvD_BwE)
   - Wireframes and mockup creation.
 - [GitHub](https://github.com)
   - Version control, cloud storage and deployment.
-- [GitPod](https://gitpod.io/workspaces/)
-  - Cloud based coding of HTML, CSS and README creation.
 - [VS Code](https://code.visualstudio.com)
-  - Offline coding of HTML, CSS and README creation.
+  - Offline coding of HTML, CSS, Javascript and README creation.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
   - Chromes developer tools were used for testing the responsiveness of the sites layout and device emulation.
 - [Firefox Developer Edition](https://www.mozilla.org/en-GB/firefox/developer/)
-  - Firefoxes developer tools were used for testing the responsiveness of the sites layout and device emulation. -->
+  - Firefoxes developer tools were used for testing the responsiveness of the sites layout and device emulation.
 
 ## Testing
+
+<!-- todo: THIS IS WHERE I AM WORKING -->
 
 #### Online and automated
 
 <!-- - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - The Lighthouse website scoring system was used to test and rate the websites performance.
+- The Lighthouse website scoring system was used to test and rate the websites performance.
 
-    - On initial testing:
-      - SEO score was effected by the absence of a Meta Description element in the Head of the HTML. - Fixed
-      - SEO score was effected by a "non legible font size" error due to some text with font-size under 12px. - Fixed
-      - Accessability score was effected by a lack of form input labels. - Fixed
-      - Accessability score was effected by Submit button contrast. - Fixed
-      - Best Practices score was effected by unused CSS. - Fixed
-      - Best Practices score was effected by incorrect Heading Hierarchy. - Fixed
-      - Best Practices score was effected by external links with a `target="_blank"` rule causing a security vulnerability. - Fixed by adding `rel="noopener"` to each external link.
-      - Performance score was raised by compressing all site images on - [TinyPNG](https://tinypng.com)
+  - On initial testing:
+    - SEO score was effected by the absence of a Meta Description element in the Head of the HTML. - Fixed
+    - SEO score was effected by a "non legible font size" error due to some text with font-size under 12px. - Fixed
+    - Accessability score was effected by a lack of form input labels. - Fixed
+    - Accessability score was effected by Submit button contrast. - Fixed
+    - Best Practices score was effected by unused CSS. - Fixed
+    - Best Practices score was effected by incorrect Heading Hierarchy. - Fixed
+    - Best Practices score was effected by external links with a `target="_blank"` rule causing a security vulnerability. - Fixed by adding `rel="noopener"` to each external link.
+    - Performance score was raised by compressing all site images on - [TinyPNG](https://tinypng.com)
 
-  - After each test, the appropriate suggested changes were carried out, giving the site a score of:
-    - Performance (83%)
-    - Accessability (100%)
-    - Best Practices (100%)
-    - SEO (100%).
-    - [Full Results here](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvinnyshaw.github.io%2Fvinny-shaw-photography-ci-ms1%2F%23about&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#performance)
+- After each test, the appropriate suggested changes were carried out, giving the site a score of:
+
+  - Performance (83%)
+  - Accessability (100%)
+  - Best Practices (100%)
+  - SEO (100%).
+  - [Full Results here](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvinnyshaw.github.io%2Fvinny-shaw-photography-ci-ms1%2F%23about&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext#performance)
 
 - [Wave](https://wave.webaim.org/) Web Accessibility Valuation Tool
 
