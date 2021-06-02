@@ -41,13 +41,18 @@ The aim of this website is to allow the user to find information about the event
 
 #### Existing
 
+- **Navigation** - the header contains the Navigation and Theme toggle which allow users easily select the required site section and to change the theme.
+  ![Navigation and theme toggle](assets/images/nav-desktop.png "Navigation and theme toggle")
+- **Theme switching** - a toggle in the header will allow the user to switch between Light and Dark site themes. This operation is carried out by custom Javascript.
 - **WHAT section** - allows users to learn about Cars and Coffee by reading a short description of the event.
 - **WHEN section** - gives the user the date/time of the event or any additional activities.
 - **WHERE section** - provides the user with the location of the event and any additional activities utilizing the Google Maps API.
+  ![Google Maps API](assets/images/where-section-map.png "Google Maps API")
 - **CONTACT section** - allows the user to quickly contact the site owner by filling out and submitting a short form which will utilise [emailJS](https://www.emailjs.com/) to submit the contents of the completed form in an email to the event organizers.
+  ![Contact Form](assets/images/contact-form.png "Contact Form")
 - **Social media links** - the footer offers external links to the owners various social media accounts which will open in a new tab.
+  ![Footer](assets/images/footer-desktop.png "Footer")
 - **Contact link** - a user wishing to contact the owner, from any point of the site, can simply click the internal link to take them to the Contact section.
-- **Theme switching** - a toggle in the header will allow the user to switch between Light and Dark site themes. This operation is carried out by custom Javascript.
 
 #### Future Options and Implementations
 
@@ -235,10 +240,13 @@ The project was deployed to GitHub Pages
 
 ### Code
 
+<!-- todo: think on this section -->
+
 ### Content
 
 - All the text used throughout the website was written by myself, Vinny Shaw.
 - The Code Institute sample [README](https://github.com/Code-Institute-Solutions/readme-template) was used as the basis for this README file.
+- The Google Maps API is used in the WHERE section.
 
 ### Media
 
