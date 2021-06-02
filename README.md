@@ -87,8 +87,6 @@ The aim of this website is to allow the user to find information about the event
 
 ## Testing
 
-<!-- todo: THIS IS WHERE I AM WORKING -->
-
 #### Online and automated
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
@@ -96,19 +94,15 @@ The aim of this website is to allow the user to find information about the event
 - The Lighthouse website scoring system was used to test and rate the websites performance.
 
   - On initial testing:
-    - SEO score was effected by the absence of a Meta Description element in the Head of the HTML. - Fixed
-    - SEO score was effected by a "non legible font size" error due to some text with font-size under 12px. - Fixed
-    - Accessability score was effected by a lack of form input labels. - Fixed
+
     - Accessability score was effected by Submit button contrast. - Fixed
-    - Best Practices score was effected by unused CSS. - Fixed
-    - Best Practices score was effected by incorrect Heading Hierarchy. - Fixed
-    - Best Practices score was effected by external links with a `target="_blank"` rule causing a security vulnerability. - Fixed by adding `rel="noopener"` to each external link.
+    - Accessability score was effected by lack of accessible names on items in Bootstraps coding. - Outstanding
     - Performance score was raised by compressing all site images on - [TinyPNG](https://tinypng.com)
 
 - After each test, the appropriate suggested changes were carried out, giving the site a score of:
 
-  - Performance (80%)
-  - Accessability (96%)
+  - Performance (68%)
+  - Accessability (98%)
   - Best Practices (100%)
   - SEO (100%).
   - [Full Results here](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fvinnyshaw.github.io%2Fcars-and-coffee-ci-ms2%2F%23contact&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
@@ -122,92 +116,84 @@ The aim of this website is to allow the user to find information about the event
 - [Google](https://developers.google.com/speed/pagespeed/insights/) Page Speed Insights
 
   - Testing for page lading speeds.
-  - [Mobile Results](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvinnyshaw.github.io%2Fvinny-shaw-photography-ci-ms1%2F%23home&tab=mobile)
-  - [Desktop Results](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvinnyshaw.github.io%2Fvinny-shaw-photography-ci-ms1%2F%23home&tab=desktop)
+  - [Mobile Results](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvinnyshaw.github.io%2Fcars-and-coffee-ci-ms2%2F%23what&tab=mobile)
+  - [Desktop Results](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvinnyshaw.github.io%2Fcars-and-coffee-ci-ms2%2F%23what&tab=desktop)
 
 - [CSS Lint](http://csslint.net)
   - Used to check the custom CSS file for errors.
   - There are zero errors present.
 - [Am I Responsive](http://ami.responsivedesign.is)
+
   - This site allows a live site to be viewed on several emulated devices at once to check responsiveness of layout.
+
 - [W3C HTML Validator](https://validator.w3.org)
   - This site validates the HTML code to confirm it is up to standards.
-  - No errors were found in the custom HTML.
+  - No errors are present in the custom HTML.
   - [Results here](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2)
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
   - No errors were found in the custom CSS.
-  - ![Valid CSS](assets/img/vcss-blue.gif "Valid CSS")
+  - ![Valid CSS](assets/images/vcss-blue.gif "Valid CSS")
 
 #### Manual
 
 1. Header Navigation:
 
    1. Click each section link and confirm site scrolls to correct area.
-   2. Click "V✵S" logo and confirm site returns to home section.
-   3. Attempt to submit the form with an invalid email address and verify that a relevant error message appears.
-   4. Attempt to submit the form with all inputs valid and verify that a success message appears.
+   2. Click "Cars & Coffee" logo and confirm site returns to WHAT section.
 
-2. Footer Links:
+2. Theme Toggle:
 
-   1. Click "Let's Talk!" contact link and confirm site scrolls to the "Contact" section.
+   1. Click the Theme toggle and confirm sites theme switches.
+   2. Click the Theme toggle again and confirm sites theme switches back to original theme.
+
+3. Footer Links:
+
+   1. Click "Get in Touch!" contact link and confirm site scrolls to the "Contact" section.
    2. Click each social media link and confirm the correct site is loaded into a new tab.
 
-3. Bootstrap Image Carousel:
+4. Map
 
-   1. Go to "Gallery" section.
-   2. Confirm that image carousel has loaded and begun displaying content.
-   3. Click the manual next ">" and previous "<" controls and confirm they correctly allow the user to navigate through the carousel.
+   1. On initial map loading, confirm the Meeting point checkbox is active and the marker is displayed.
+   2. Toggle the Meeting point checkbox and confirm the marker is hidden/displayed.
+   3. On initial map loading, confirm the Route 1 checkbox is in-active and the markers are hidden.
+   4. Toggle the Route 1 checkbox and confirm the markers are hidden/displayed.
+   5. On initial map loading, confirm the Route 2 checkbox is in-active and the markers are hidden.
+   6. Toggle the Route 2 checkbox and confirm the markers are hidden/displayed.
+   7. On initial map loading, confirm the Route 3 checkbox is in-active and the markers are hidden.
+   8. Toggle the Route 3 checkbox and confirm the markers are hidden/displayed.
+   9. On initial map loading, confirm the Fuel checkbox is in-active and the markers are hidden.
+   10. Toggle the Fuel checkbox and confirm the markers are hidden/displayed.
+   11. On initial map loading, confirm the Food/Drink checkbox is in-active and the markers are hidden.
+   12. Toggle the Food/Drink checkbox and confirm the markers are hidden/displayed.
 
-4. Contact form:
+5. Contact form:
 
    1. Go to the "Contact" section, by either header or footer link.
    2. Attempt to submit the empty form and verify that an error message about the required fields appears.
-   3. Attempt to submit the form with an invalid email address and verify that a relevant error message appears.
-   4. Attempt to submit the form with all inputs valid and verify that a success message appears.
-
-5. JQuery:
-   1. Scroll through site and check that section text areas opacity fade out before header section.
+   3. Attempt to submit the form with an invalid data and verify that a relevant error message appears.
+   4. Attempt to submit the form with all inputs valid and verify that a success message is console logged.
 
 ## Bugs and fixes
 
-<!-- On the initial live upload of the website to GitHub Pages, it was discovered that the background-images were not displaying properly on mobile devices. In particular ios devices. On further research, it was discovered that this is a known bug with devices running ios13 and above.
-
-After troubleshooting any CSS rules relating to the background-images, it was discovered that the the was caused by the "background-attachment" being set to "fixed".
-
-This was changed to "scroll" and a media query for larger screens was written to allow the "fixed" rule and the therefore the parallax effect works on the larger screens.
-
-- ```
-  .bg-img {
-      background-position: center center;
-      background-attachment: scroll;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  ```
-
-- `background-attachment: scroll;`
-  - must be used on smaller screens for iOS devices.
-- `background-attachment: fixed;`
-
-  - is later placed in a CSS media query for larger screens to allow the desired parallax effect. -->
+<!-- todo: think on this section -->
 
 ## Deployment
 
-<!-- - GitHub Pages
+- GitHub Pages
 
-  The project was deployed to GitHub Pages
+The project was deployed to GitHub Pages
 
-  - Log in to GitHub "VinnyShaw/vinny-shaw-photography-ci-ms1" repository.
+- Log in to GitHub "VinnyShaw/vinny-shaw-cars-and-coffee-ci-ms2" repository.
 
-  - Click the repositories "Settings" option.
+- Click the repositories "Settings" option.
 
-  - Scroll down the Settings page until the "GitHub Pages" Section.
+- Scroll down the Settings page until the "GitHub Pages" Section.
 
-  - Change "Source" from "None" to "Master Branch".
+- Change "Source" from "None" to "Master Branch".
 
-  - The page will should reload.
+- The page will should reload.
 
-  - Scroll back down to the "GitHub Pages" section and use the "Your site is published at:" link to launch the site.
+- Select the "Pages" section on the left and use the "Your site is published at:" link to launch the site.
 
 - Forking the GitHub Repository
 
@@ -215,7 +201,7 @@ This was changed to "scroll" and a media query for larger screens was written to
 
   - Log in to GitHub
 
-  - Visit the "VinnyShaw/vinny-shaw-photography-ci-ms1" repository.
+  - Visit the "VinnyShaw/cars-and-coffee-ci-ms2" repository.
 
   - Click the repositories "Fork" option.
 
@@ -223,7 +209,7 @@ This was changed to "scroll" and a media query for larger screens was written to
 
 - Making a Local Clone of the Repository is possible in several ways
 
-  - Log in to GitHub "VinnyShaw/vinny-shaw-photography-ci-ms1" repository.
+  - Log in to GitHub "VinnyShaw/cars-and-coffee-ci-ms2" repository.
 
   - Click the repositories "Code" option.
 
@@ -235,21 +221,19 @@ This was changed to "scroll" and a media query for larger screens was written to
 
     or
 
-- Copy the repository HTTPS link: https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1.git
+- Copy the repository HTTPS link: https://vinnyshaw.github.io/cars-and-coffee-ci-ms2/#what
 
 - Open Git Bash.
 
 - Set the location of the working directory where you want the cloned directory to be made.
 
-- Type git clone, and then paste the HTTPS URL and press Enter to complete. -->
+- Type git clone, and then paste the HTTPS URL and press Enter to complete.
 
 ## Credits
 
-### Code
+<!-- todo: think on this section -->
 
-<!-- - [JQuery in footer](https://jquery.com)
-  - A script has been used to aid the minimal design by fading out the opacity of section text, as the user scrolls, to avoid any clashes with the navigation menu in the transparent header.
-  - The script is from this [Stackoverflow.com](https://stackoverflow.com/questions/42949293/fade-elements-as-they-reach-the-top-of-the-page) article. -->
+### Code
 
 ### Content
 
@@ -262,6 +246,6 @@ This was changed to "scroll" and a media query for larger screens was written to
 
 ### Acknowledgements
 
-- I would like to thank...
+- I would like to thank:
   - Narender Singh (Mentor) for his time, patience, clear and informative mentoring sessions.
-  - Miles Vincent of Cars and Coffee for allowing me to use the event for this project.
+  - Miles Vincent of Cars and Coffee Inverness for allowing me to use the event for this project.
