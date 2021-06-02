@@ -36,7 +36,7 @@ The aim of this website is to allow the user to find information about the event
 - A user may wish to alter the colour scheme of the site between light and dark modes.
   - They can do this by interacting with the Theme Toggle switch in the sites header.
 
-## [Click to visit Wireframes, mockups and screenshots](https://github.com/VinnyShaw/carsa-and-coffee-ci-ms2/blob/master/wireframes.md)
+## [Click to visit Wireframes, mockups and screenshots](https://github.com/VinnyShaw/cars-and-coffee-ci-ms2/blob/master/WIREFRAMES.md)
 
 ## Features
 
