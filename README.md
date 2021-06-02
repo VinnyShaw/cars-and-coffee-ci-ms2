@@ -24,18 +24,17 @@ An interactive website providing information for the regular automotive event **
 The aim of this website is to allow the user to find information about the event and its activities.
 
 - A user may wish to know the time and location of the event.
+  - They can do this ny navigating to the WHEN and WHERE sections of the site.
 - A user may wish to see a map detailing the the location of the event or any other planned activities.
+  - They can do this by navigation to the WHERE section of the site and interacting with the the Google Maps API interface.
 - A user may wish to easily contact the organizers of the event regarding attending or ask for additional information.
-- A user may wish to find out what the theme of the event by reading a clear description.
-- A user may wish to see where the event is by looking at its location on google maps.
-- A user may wish to know when the event is in a clear event listing.
+  - They can do this by navigation tho the CONTACT section of the site, filling out the contact form and submitting.
 - A user may wish to find the events social media accounts and be able to follow a link to them.
-- A user may wish to contact the event organizers by use of a simple form.
-- A user may wish to see the routes driven on the events.
-- A user may wish to toggle the information displayed on the route maps.
-- A user may wish to toggle the colour scheme of the site between light and dark modes.
+  - They can do this by clicking the social media links in the footer section of the site.
+- A user may wish to alter the colour scheme of the site between light and dark modes.
+  - They can do this by interacting with the Theme Toggle switch in the sites header.
 
-<!-- ## [Click to visit Wireframes, mockups and screenshots](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md) -->
+## [Click to visit Wireframes, mockups and screenshots](https://github.com/VinnyShaw/carsa-and-coffee-ci-ms2/blob/master/wireframes.md)
 
 ## Features
 
