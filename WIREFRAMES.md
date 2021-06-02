@@ -14,9 +14,9 @@ Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
 ## Table of contents
 
-- [Wireframes](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#wireframes)
+- [Wireframes](https://github.com/VinnyShaw/cars-and-coffee-ci-ms2/blob/master/wireframes.md#wireframes)
 
-- [Design alterations](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#design-alterations)
+- [Design alterations](https://github.com/VinnyShaw/cars-and-coffee-ci-ms2/blob/master/wireframes.md#design-alterations)
 
 ### Wireframes
 
