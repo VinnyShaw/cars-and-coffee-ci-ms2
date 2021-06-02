@@ -16,13 +16,13 @@ Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
 - [Wireframes](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#wireframes)
 
-  - [Mobile/Tablet/Desktop](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#mobile-tablet-desktop)
+  <!-- - [Mobile/Tablet/Desktop](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#mobile-tablet-desktop)
   - [Mobile](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#mobile)
-  - [Desktop](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#desktop)
+  - [Desktop](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#desktop) -->
 
-- [Mockup](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#mockups)
+<!-- - [Mockup](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#mockups)
 
-- [Screenshots](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#screenshots)
+- [Screenshots](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#screenshots) -->
 
 - [Design alterations](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/wireframes.md#design-alterations)
 
@@ -32,21 +32,23 @@ Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 
 ![Home Mockup](assets/wireframes/Cars-and-Coffee-initial-wireframes.png)
 
-#### Mobile
+<!-- #### Mobile
 
-![Mobile](assets/wireframes/6-mobile-wire.png)
+![Mobile](assets/wireframes/6-mobile-wire.png) -->
 
-#### Desktop
+<!-- #### Desktop
 
 ![Desktop Home](assets/wireframes/1-desktop-index-wire.png)
 ![Desktop About](assets/wireframes/2-desktop-about-wire.png)
 ![Desktop Gallery](assets/wireframes/3-desktop-gallery-wire.png)
 ![Desktop Service](assets/wireframes/4-desktop-services-wire.png)
-![Desktop Contact](assets/wireframes/5-desktop-contact-wire.png)
+![Desktop Contact](assets/wireframes/5-desktop-contact-wire.png) -->
 
-#### Mockups
+<!-- #### Mockups
 
-![Home Mockup](assets/wireframes/8-desktop-index-mock.png)
+![Home Mockup](assets/wireframes/8-desktop-index-mock.png) -->
+
+<!-- todo: THIS IS WHERE I AM WORKING NOW -->
 
 #### Design alterations
 
@@ -57,7 +59,7 @@ Welcome to my Code Institute MS2 Project:<br>Interactive Frontend Development.
 - **Gallery** - Bootstrap carousel used across all screen sizes and devices.
 - **Services** - Design changed from Bootstrap cards to a simpler image and title format.
 
-#### Screenshots
+<!-- #### Screenshots
 
 iPhone 6 Portrait
 
@@ -73,6 +75,6 @@ iPhone 6 Landscape
 ![About](assets/screenshots/iphone6-about-landscape-screenshot.PNG)
 ![Gallery](assets/screenshots/iphone6-gallery-landscape-screenshot.PNG)
 ![Services](assets/screenshots/iphone6-services-landscape-screenshot.PNG)
-![Contact](assets/screenshots/iphone6-contact-landscape-screenshot.PNG)
+![Contact](assets/screenshots/iphone6-contact-landscape-screenshot.PNG) -->
 
 ## [Return to main README document](https://github.com/VinnyShaw/vinny-shaw-photography-ci-ms1/blob/master/README.md)
